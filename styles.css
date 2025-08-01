@@ -403,7 +403,11 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     border-radius: 2rem;
+    transition: box-shadow .3 ease;
     color: rgb(250, 164, 16);
+}
+#restart-btn:hover {
+    box-shadow: 0 0 15px #131e68;
 }
 
 
