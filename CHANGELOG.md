@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased] - 2025-08-04
+## Eric Changes - 2025-08-04
 
 ### Added
 - Dynamic page-based data loading system for memory game
@@ -17,9 +17,7 @@
   - *Why*: Allows different pages (array, date, string, etc.) to have their own unique card sets
 - **Updated memory game flow** - Cards now load face-down, requiring user to click "Start Game"
   - *Why*: Gives players control over when to begin memorizing, improving user experience
-- **Optimized card preview timing** - Adjusted from 2 seconds to 500ms, then increased to 1 second
-  - Initial reduction to 500ms for faster gameplay 
-  - Increased to 1000ms to allow CSS flip animation (1.5s) to complete properly
+  - Increased to 2000ms to allow CSS flip animation (1.5s) to complete properly
   - *Why*: Better visual experience ensuring animation finishes before cards flip back
 - **Enhanced matching logic** - Now properly matches methods with their corresponding examples
   - *Why*: Fixed bug where two methods or two examples could incorrectly match
@@ -42,7 +40,7 @@
 - **Fixed import paths** - Added .js extension to import statements
   - *Why*: ES6 modules require explicit file extensions
 - **Updated image paths** - Changed from `./images/` to `../images/` for pages directory
-  - *Why*: Corrected relative paths for Devslopes logo visibility
+  - *Why*: Corrected relative paths for Devslopes logo 
 
 #### CSS Enhancements
 - **Fixed layout issues** - Resolved overlapping content and horizontal scrolling
