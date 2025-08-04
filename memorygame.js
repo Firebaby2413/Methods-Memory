@@ -70,11 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 matchedPairs = 0;
                 time = 0;
                 timer.textContent = "00:00";
-                clearInterval(timerInterval);
+                clearInterval(timeInterval);
                 timeInterval = setInterval(() => {
                     time++;
                     let minutes = String(Math.floor(time / 60)).padStart(2, "0");
-                    let seconds = String(time / 60).padStart(2, "0");
+                    let seconds = String(time % 60).padStart(2, "0");
                     timer.textContent = `${minutes}:${seconds}`;
                 }, 1000);
                 createBoard();
@@ -82,10 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     document.querySelectorAll(".card").forEach((card => {
                         card.style.pointerEvents = "auto";
-                    });
+                    }));
                 }, 500);
             }, 500);
         }, 800);
     }
-    restartbtn.addEventListener("click")
+    restartbtn.addEventListener("click", startGame);
+    startGame();
 })
