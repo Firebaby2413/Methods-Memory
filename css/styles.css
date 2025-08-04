@@ -1,413 +1,527 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
-    background-color: #444343;
-    margin: 0;
-    padding: 0;
+  background-color: #444343;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 80px;
-    background-color: #131e68;
-    transition: all 0.5s ease;
-    box-shadow: 5px 5px 5px 5px #000;
-    /* border: 3px solid #fff; */
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  background-color: #131e68;
+  transition: all 0.5s ease;
+  box-shadow: 5px 5px 5px 5px #000;
+  /* border: 3px solid #fff; */
+  z-index: 1;
 }
 
 .sidebar.active ~ .main-content {
-    left: 250px;
-    width: calc(100% - 250px);
-    height: 100%;
-    padding: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 100%;
+  padding: 0;
 }
 
 .sidebar.active {
-    width: 250px;
-    height: 100%;
+  width: 250px;
+  height: 100%;
 }
 
 .sidebar #btn {
-    position: absolute;
-    color: #fff;
-    top: .4rem;
-    left: 50%;
-    font-size: 1.2rem;
-    line-height: 50px;
-    transform: translateX(-50%);
-    cursor: pointer;
+  position: absolute;
+  color: #fff;
+  top: 0.4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar.active #btn {
-    left: 90%;
+  left: 90%;
 }
 
-
 .sidebar .top .logo {
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 50px;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    pointer-events: none;
-    opacity: 0;
-    justify-content: center;
-    gap: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 50px;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  justify-content: center;
+  gap: 10px;
 }
 
 .sidebar .top .logo .sidebarTitle {
-    font-weight: bold;
-    font-size: 18px;
-    justify-content: center;
-    align-items: center;
-    color: rgb(250, 164, 16);
+  font-weight: bold;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(250, 164, 16);
 }
 
 .sidebar.active .top .logo {
-    opacity: 1;
+  opacity: 1;
 }
 
 .top .logo i {
-    font-size: 2rem;
-    margin-right: 5px;
+  font-size: 2rem;
+  margin-right: 5px;
 }
 
 .sidebar ul li {
-    position: relative;
-    list-style-type: none;
-    height: 50px;
-    top: 3rem;
-    width: 90%;
-    margin: 1rem auto;
-    line-height: 20px;
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  top: 3rem;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Collapsed sidebar - center the items */
+.sidebar ul li {
+  justify-content: center;
+}
+
+/* Expanded sidebar - align items to the left with padding */
+.sidebar.active ul li {
+  justify-content: flex-start;
+  padding-left: 10px;
 }
 
 .sidebar ul li a {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 0.8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/* In expanded mode, add some padding to the entire link */
+.sidebar.active ul li a {
+  justify-content: flex-start;
+  padding: 0 15px 0 10px;
 }
 
 .sidebar ul li a:hover {
-    background-color: #fff;
-    color: #131e68;
-    border: 3px solid #000;
+  background-color: #fff;
+  color: #131e68;
+  border: 3px solid #000;
 }
 
 .sidebar ul li a i {
-    min-width: 50px;
-    text-align: center;
-    height: 50px;
-    border-radius: 12px;
-    line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  flex-shrink: 0;
+}
+
+/* In expanded mode, ensure consistent icon positioning */
+.sidebar.active ul li a i {
+  width: 60px;
+  margin-right: 0;
+  text-align: center;
 }
 
 .sidebar .nav-item {
-    opacity: 0;
+  display: none;
 }
 
 .sidebar.active .nav-item {
-    opacity: 1;
+  display: block;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .sidebar ul li .tooltip {
-    position: absolute;
-    left: 125px;
-    top: 50%; 
-    background-color: #131e68;
-    color: #fff;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0.5rem 0.8rem #000;
-    border-radius: 0.6rem;
-    padding: .4rem 1.2rem;
-    line-height: 1.8rem;
-    opacity: 0;
-    border: 3px solid #000;
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  background-color: #131e68;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem #000;
+  border-radius: 0.6rem;
+  padding: 0.4rem 1.2rem;
+  line-height: 1.8rem;
+  display: none;
+  border: 3px solid #000;
 }
 
 .sidebar ul li:hover .tooltip {
-    opacity: 1;
-    z-index: 1;
+  display: block;
+  z-index: 1;
 }
 
 .sidebar.active ul li .tooltip {
-    display: none;
+  display: none;
 }
 
 .main-content {
-    position: relative;
-    background-color: #444343;
-    height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-    padding: 0;
-    margin-left: 100px;
+  position: relative;
+  background-color: #444343;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  width: calc(100% - 80px);
+  padding: 20px;
+  margin-left: 80px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-
 h1 {
-    display: flex;
-    align-items: center;;
-    text-align: center;
-    justify-content: center;
-    color: #fff;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 h2 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .instructions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: #131e68;
-    width: 40%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 5px 5px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #131e68;
+  width: 40%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px 5px #000;
 }
 
 .instructions-list {
-    padding: 2rem 2rem;
+  padding: 2rem 2rem;
 }
 
-
 .instructions-list li {
-    font-size: 24px;
-    background-color: #131e68;
-    padding: 2rem 3rem;
-    color: #fff;
-    text-align: justify;
+  font-size: 24px;
+  background-color: #131e68;
+  padding: 2rem 3rem;
+  color: #fff;
+  text-align: justify;
 }
 
 .group-headings {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 160px;
-    margin: 15px;
-    color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  margin: 15px;
+  color: #000;
 }
-
-#card-area {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 40px auto;
-    gap: 40px;
-    padding: 0;
-    background-color: #444343;
-}
-
 
 .card {
-    display: flex;
-    height: 350px;
-    width: 350px;
-    position: relative;
-    transform-style: preserve-3d;
-    border: 3px solid #000;
-    transition: transform 1.5s;
-    box-shadow: 0 0 5px 5px #000;
-    background-color: rgb(250, 164, 16);
+  display: flex;
+  height: 220px;
+  width: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  border: 3px solid #000;
+  transition: transform 1.5s;
+  box-shadow: 0 0 5px 5px #000;
+  background-color: rgb(250, 164, 16);
+  flex-shrink: 0;
 }
 
 .card:hover {
-    box-shadow: 0 0 15px #131e68;
+  box-shadow: 0 0 15px #131e68;
 }
 
 .cardClicked {
-    cursor: pointer;
-    transform: rotateY(180deg);
-    transition: transform 1.5s;
-    perspective: 500px;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transition: transform 1.5s;
+  perspective: 500px;
 }
 
-.front, .back {
-    height: 100%;
-    width: 100%;
-    background-color: #131e68;
-    border: 3px solid #000;
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    padding: 1rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 5px 2px rgba(50, 50,50, 0.25);
-    position: absolute;
-    backface-visibility: hidden;
-    
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  background-color: #131e68;
+  border: 3px solid #000;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
 }
 
 .front {
-    background-color: #131e68;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    border: 3px solid #fff;
+  background-color: #131e68;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 3px solid #fff;
 }
 
 .back {
-    background-color: #131e68;
-    transform: rotateY(-180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    font-size: 24px;
-    border: 3px solid #fff;
+  background-color: #131e68;
+  transform: rotateY(-180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  border: 3px solid #fff;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.back p {
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+.back h3 {
+  font-size: 16px;
+  margin: 8px 0;
 }
 
 .method {
-    color: rgb(250, 164, 16);
+  color: rgb(250, 164, 16);
 }
 
 .method-type {
-    color: rgb(250, 164, 16);
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 250px;
-}
-
-.main-header {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 48px;
-    color: #fff;
+  color: rgb(250, 164, 16);
 }
 
 .purpose {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
-
-.array-container, .object-container {
-    display: flex;
-    width: 500px;
-    height: 800px;
-    flex-direction: column;
-    text-align: center;
-    color: #fff;
-    background-color: #131e68;
-    border: 3px solid #000;
-    gap: 20px;
-    padding: 3rem 2rem;
-    box-shadow: 0 0 5px 5px #000;
+.array-container,
+.object-container {
+  display: flex;
+  width: 500px;
+  height: 800px;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background-color: #131e68;
+  border: 3px solid #000;
+  gap: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 0 5px 5px #000;
 }
 
-.array-definition, .object-definition {
-    text-align: center;
-    font-size: 24px;
+.array-definition,
+.object-definition {
+  text-align: center;
+  font-size: 24px;
 }
 
 .list-heading {
-    text-align: center;
-    font-size: 24px;
+  text-align: center;
+  font-size: 24px;
 }
 
-.array-list li, .object-list li {
-    text-align: justify;
-    font-size: 20px;
+.array-list li,
+.object-list li {
+  text-align: justify;
+  font-size: 20px;
 }
 
-.array-header a, .object-header a {
-    text-decoration: underline;
-    color: rgb(250, 164, 16);
-    font-weight: bold;
-    font-size: 30px;
+.array-header a,
+.object-header a {
+  text-decoration: underline;
+  color: rgb(250, 164, 16);
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .documentation {
-    text-decoration: underline;
-    color: rgb(250, 164, 16);
+  text-decoration: underline;
+  color: rgb(250, 164, 16);
 }
 
 .game-container {
-    text-align: center;
-    background: rgb(250, 164, 16);
-    padding: 20px;
-    border-radius: 2rem;
-    box-shadow: 0 0 15px #131e68;
+  text-align: center;
+  background: rgb(250, 164, 16);
+  padding: 20px;
+  border-radius: 2rem;
+  box-shadow: 0 0 15px #131e68;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.game-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.game-info {
+  display: flex;
+  gap: 20px;
+  color: #131e68;
+}
+
+.game-info p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #131e68;
 }
 
 .game-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    place-items: center;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  place-items: center;
+  padding: 30px;
+  background-color: #444343;
+  border-radius: 1rem;
+  margin-top: 20px;
+  max-width: 100%;
+  min-height: 500px;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 1200px) {
+  .game-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .card {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .card {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .card {
+    height: 160px;
+    width: 160px;
+  }
+
+  .game-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
 }
 
 #restart-btn {
-    margin-top: 20px;
-    background: #131e68;
-    border: 3px solid rgb(250, 164, 16);
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 2rem;
-    transition: box-shadow .3 ease;
-    color: rgb(250, 164, 16);
+  background: #131e68;
+  border: 2px solid #131e68;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  color: rgb(250, 164, 16);
 }
+
 #restart-btn:hover {
-    box-shadow: 0 0 15px #131e68;
+  background: rgb(250, 164, 16);
+  color: #131e68;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
-
-

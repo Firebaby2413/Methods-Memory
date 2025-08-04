@@ -9,14 +9,14 @@
       src="https://kit.fontawesome.com/b0201ea9e5.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../scripts/data.js" defer></script>
+    <script src="../scripts/memorygame.js" type="module"></script>
     <script src="../scripts/scripts.js" defer></script>
   </head>
   <body>
     <div class="sidebar">
       <div class="top">
         <div class="logo">
-          <img src="./images/Devslopesimg.png" alt="Devslopes Logo" />
+          <img src="../images/Devslopesimg.png" alt="Devslopes Logo" />
           <span class="sidebarTitle">Methods Practice</span>
         </div>
         <i class="fa-solid fa-bars" id="btn"></i>
@@ -97,9 +97,18 @@
     </div>
 
     <div class="main-content">
-      <div class="container">
-        <h1 class="main-header">Array Methods</h1>
-        <div id="card-area"></div>
+      <div class="game-container">
+        <div class="game-header">
+          <div class="title">Array Methods Memory Game</div>
+          <div class="game-controls">
+            <div class="game-info">
+              <p>Moves: <span id="move-counter">0</span></p>
+              <p>Timer: <span id="timer">00:00</span></p>
+            </div>
+            <button id="restart-btn">Start Game</button>
+          </div>
+        </div>
+        <div id="card-area" class="game-grid"></div>
       </div>
     </div>
   </body>
