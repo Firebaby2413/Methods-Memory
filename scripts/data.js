@@ -251,10 +251,11 @@ const pageData = {
   math: {
     methods: [
       {
+
         id: "",
         frontTitle: "",
         backTitle: "",
-        backDescription: "",
+        backDescription: ""
       },
     ],
     examples: [
@@ -339,6 +340,7 @@ const pageData = {
     ],
   },
 };
+
 
 function createMemoryCard(obj, flipHandler) {
   const cardArea = document.getElementById("card-area");
