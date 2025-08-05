@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let timeInterval;
   let totalPairs = 0;
   let gameStarted = false;
+  const preStartTimer = 8000;
 
   function getCurrentPageName() {
     const path = window.location.pathname;
@@ -99,13 +100,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Show all cards briefly (1 second to allow animation to complete)
+    // Show all cards briefly
     document.querySelectorAll(".card").forEach((card) => {
       card.classList.add("cardClicked");
       card.style.pointerEvents = "none";
     });
 
-    // After 1 second, flip all cards back
+    // After 2 second, flip all cards back
     setTimeout(() => {
       document.querySelectorAll(".card").forEach((card) => {
         card.classList.remove("cardClicked");
@@ -128,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Update button text and game state
       gameBtn.textContent = "Restart Game";
       gameStarted = true;
-    }, 2000);
+    }, preStartTimer);
   }
 
   gameBtn.addEventListener("click", () => {

@@ -5,7 +5,8 @@ const pageData = {
         id: "arrayLengthMethod",
         frontTitle: "Array Methods",
         backTitle: "array.length",
-        backDescription: "<p>Returns the length property (size) of an array.</p>",
+        backDescription:
+          "<p>Returns the length property (size) of an array.</p>",
       },
       {
         id: "arrayToStringMethod",
@@ -209,8 +210,8 @@ const pageData = {
         backDescription:
           "<p>const spliced = months.toSpliced(0, 1);</p><p>['Feb', 'Mar', 'Apr'];</p>",
       },
-    ]
-  }, 
+    ],
+  },
   date: {
     methods: [
       {
@@ -219,13 +220,14 @@ const pageData = {
         backTitle: "",
         backDescription: "",
       },
-      examples: [
-        {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
-        },
+    ],
+    examples: [
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
     ],
   },
   map: {
@@ -239,10 +241,10 @@ const pageData = {
     ],
     examples: [
       {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
       },
     ],
   },
@@ -257,10 +259,10 @@ const pageData = {
     ],
     examples: [
       {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
       },
     ],
   },
@@ -275,13 +277,13 @@ const pageData = {
     ],
     examples: [
       {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
       },
     ],
-  }, 
+  },
   object: {
     methods: [
       {
@@ -293,13 +295,13 @@ const pageData = {
     ],
     examples: [
       {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
       },
     ],
-  }, 
+  },
   set: {
     methods: [
       {
@@ -311,13 +313,13 @@ const pageData = {
     ],
     examples: [
       {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
       },
     ],
-  }, 
+  },
   string: {
     methods: [
       {
@@ -329,25 +331,23 @@ const pageData = {
     ],
     examples: [
       {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
       },
     ],
-  }
+  },
 };
-
-
 
 function createMemoryCard(obj, flipHandler) {
   const cardArea = document.getElementById("card-area");
   const cardDiv = document.createElement("div");
   cardDiv.id = obj.id;
   cardDiv.classList = "card";
-  
+
   // Extract method name for matching (remove "Method" or "Example" suffix)
-  const methodName = obj.id.replace(/(Method|Example)$/, '');
+  const methodName = obj.id.replace(/(Method|Example)$/, "");
   cardDiv.dataset.symbol = methodName;
 
   const frontCardDiv = document.createElement("div");
@@ -370,12 +370,12 @@ function createMemoryCard(obj, flipHandler) {
   backCardDiv.innerHTML = backCardDiv.innerHTML + obj.backDescription;
 
   cardDiv.append(frontCardDiv, backCardDiv);
-  
+
   // Add click event listener
   if (flipHandler) {
     cardDiv.addEventListener("click", flipHandler);
   }
-  
+
   cardArea.append(cardDiv);
 }
 
