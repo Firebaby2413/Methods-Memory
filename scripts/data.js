@@ -219,125 +219,125 @@ const pageData = {
         backTitle: "",
         backDescription: "",
       },
+    ],
+    examples: [
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: ""
+      },
+    ],
+    map: {
+      methods: [
+        {
+          id: "",
+          frontTitle: "",
+          backTitle: "",
+          backDescription: "",
+        },
+      ],
       examples: [
         {
           id: "",
           frontTitle: "",
-          backTitle: "", 
+          backTitle: "",
           backDescription: ""
         },
-    ],
-  },
-  map: {
-    methods: [
-      {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+      ],
+    },
+      math: {
+        methods: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: "",
+          },
+        ],
+        examples: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: ""
+          },
+        ],
       },
-    ],
-    examples: [
-      {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+      number: {
+        methods: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: "",
+          },
+        ],
+        examples: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: ""
+          },
+        ],
       },
-    ],
-  },
-  math: {
-    methods: [
-      {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+      object: {
+        methods: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: "",
+          },
+        ],
+        examples: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: ""
+          },
+        ],
       },
-    ],
-    examples: [
-      {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
+      set: {
+        methods: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: "",
+          },
+        ],
+        examples: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: ""
+          },
+        ],
       },
-    ],
-  },
-  number: {
-    methods: [
-      {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
-      },
-    ],
-    examples: [
-      {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
-      },
-    ],
-  }, 
-  object: {
-    methods: [
-      {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
-      },
-    ],
-    examples: [
-      {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
-      },
-    ],
-  }, 
-  set: {
-    methods: [
-      {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
-      },
-    ],
-    examples: [
-      {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
-      },
-    ],
-  }, 
-  string: {
-    methods: [
-      {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
-      },
-    ],
-    examples: [
-      {
-          id: "",
-          frontTitle: "",
-          backTitle: "", 
-          backDescription: ""
-      },
-    ],
+      string: {
+        methods: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: "",
+          },
+        ],
+        examples: [
+          {
+            id: "",
+            frontTitle: "",
+            backTitle: "",
+            backDescription: ""
+          },
+        ],
+      }
+    },
   }
-};
-
 
 
 function createMemoryCard(obj, flipHandler) {
