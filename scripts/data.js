@@ -215,6 +215,240 @@ const pageData = {
   date: {
     methods: [
       {
+        id: "newDateMethod",
+        frontTitle: "Date Methods",
+        backTitle: "new Date() Method",
+        backDescription:
+          "<p>Creates a new date object with the current date and time</p>",
+      },
+      {
+        id: "dateConstructorPropertyMethod",
+        frontTitle: "Date Methods",
+        backTitle: "Date.constructor",
+        backDescription:
+          "<p>Returns the function that created the Date Prototype</p>",
+      },
+      {
+        id: "getDateMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getDate()",
+        backDescription:
+          "<p>Returns the day of the month (1 to 31) of a date.</p>",
+      },
+      {
+        id: "getDayMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getDay()",
+        backDescription:
+          "<p>Returns the day of the week (from 0 to 6) of a date.</p>",
+      },
+      {
+        id: "getFullYearMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getFullYear()",
+        backDescription: "<p>Returns the year of a date</p>",
+      },
+      {
+        id: "getHoursMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getHours()",
+        backDescription: "<p>Returns the hour (from 0-23).</p>",
+      },
+      {
+        id: "getMillisecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getMilliseconds()",
+        backDescription: "<p>Returns the milliseconds of a date</p>",
+      },
+      {
+        id: "getMinutesMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getMinutes()",
+        backDescription: "<p>Returns the minutes of a date.</p>",
+      },
+      {
+        id: "getMonthMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getMonth()",
+        backDescription: "<p>Returns the month (from 0-11).</p>",
+      },
+      {
+        id: "getSecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getSeconds()",
+        backDescription: "<p>Returns the seconds of a date.</p>",
+      },
+      {
+        id: "getTimeMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getTime()",
+        backDescription:
+          "<p>Returns the number of milliseconds since January 1, 1970.</p>",
+      },
+      {
+        id: "getTimezoneOffsetMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getTimezoneOffset()",
+        backDescription:
+          "<p>Returns the difference between UTC time and local time, in minutes.</p>",
+      },
+      {
+        id: "getUTCDateMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCDate()",
+        backDescription:
+          "<p>Returns the day of the month of a date, according to UTC.</p>",
+      },
+      {
+        id: "getUTCDayMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCDay()",
+        backDescription:
+          "<p>Returns the day of the week (from 0 to 6), according to UTC.</p>",
+      },
+      {
+        id: "getUTCFullYearMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCFullYear()",
+        backDescription: "<p>Returns the year of a date, according to UTC.</p>",
+      },
+      {
+        id: "getUTCHoursMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCHours()",
+        backDescription: "<p>Returns the hour of a date, according to UTC.</p>",
+      },
+      {
+        id: "getUTCMillisecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCMilliseconds()",
+        backDescription: "<p>Returns the milliseconds of a date.</p>",
+      },
+      {
+        id: "getUTCMonthMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCMonth()",
+        backDescription:
+          "<p>Returns the month (from 0 to 11) of a date, according to UTC.</p>",
+      },
+      {
+        id: "getUTCSecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCSeconds()",
+        backDescription:
+          "<p>Returns the seconds of a Date, according to universal time.</p>",
+      },
+      {
+        id: "nowMethod",
+        frontTitle: "Date Methods",
+        backTitle: "Date.now()",
+        backDescription:
+          "<p>Returns the number of milliseconds since January 1, 1970 00:00:00 UTC.</p>",
+      },
+      {
+        id: "parseMethod",
+        frontTitle: "Date Methods",
+        backTitle: "Date.parse()",
+        backDescription:
+          "<p>Parses a date string and returns the number of milliseconds since midnight January 1, 1970.</p>",
+      },
+      {
+        id: "setDateMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setDate()",
+        backDescription: "<p>Sets the day of the month of a date.</p>",
+      },
+      {
+        id: "setFullYearMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setFullYear()",
+        backDescription: "<p>Sets the year of a date object.</p>",
+      },
+      {
+        id: "setHoursMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setHours()",
+        backDescription: "<p>Sets the hour of a date object.</p>",
+      },
+      {
+        id: "setMillisecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setMilliseconds()",
+        backDescription: "<p>Sets the milliseconds of a date object</p>",
+      },
+      {
+        id: "setMinutesMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setMinutes()",
+        backDescription: "<p>Sets the minutes of a date object.</p>",
+      },
+      {
+        id: "setMonthMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setMonth()",
+        backDescription: "<p>Sets the month of a date object.</p>",
+      },
+      {
+        id: "setSecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setSeconds()",
+        backDescription: "<p>Sets the seconds of a date object.</p>",
+      },
+      {
+        id: "settimeMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setTime()",
+        backDescription: "<p>Sets a date by adding milliseconds to January 1, 1970.</p>",
+      },
+      {
+        id: "setUTCDateMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setDateUTC()",
+        backDescription: "<p>Sets the date (according to UTC) of a date object.</p>",
+      },
+      {
+        id: "setUTCFullYearMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setUTCFullYear()",
+        backDescription: "<p>Sets the year (according to UTC) of a date object.</p>",
+      },
+      {
+        id: "setUTCHoursMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setUTCHours()",
+        backDescription: "<p>Sets the hour (according to UTC) of a date object.</p>",
+      },
+      {
+        id: "setUTCMillisecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setUTCMilliseconds()",
+        backDescription: "<p>Sets the milliseconds (according to UTC time) of a date object.</p>",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
+      {
         id: "",
         frontTitle: "",
         backTitle: "",
@@ -222,6 +456,233 @@ const pageData = {
       },
     ],
     examples: [
+      {
+        id: "newDateExample",
+        frontTitle: "Date Methods",
+        backTitle: "const time = new Date()",
+        backDescription:
+          "<p>Tue Aug 05 2025 15:43:29 GMT-0400 (Eastern Daylight Time)",
+      },
+      {
+        id: "dateConstructorPropertyExample",
+        frontTitle: "Date Methods",
+        backTitle: "function Date() {[native code]}",
+        backDescription:
+          "<p>const d = new Date()</p><p>let text = d.constructor</p>",
+      },
+      {
+        id: "getDateExample",
+        frontTitle: "Date Methods",
+        backTitle: "let day = d.getDate();",
+        backDescription: "<p>5</>",
+      },
+      {
+        id: "getDayExample",
+        frontTitle: "Date Method",
+        backTitle: "let day = d.getDay()",
+        backDescription: "<p>2</p>",
+      },
+      {
+        id: "getFullYearExample",
+        frontTitle: "Date Methods",
+        backTitle: "let year = d.getFullYear();",
+        backDescription: "<p>2025</p>",
+      },
+      {
+        id: "getHoursExample",
+        frontTitle: "Date Methods",
+        backTitle: "let hour = d.getHours();",
+        backDescription: "<p>17</p>",
+      },
+      {
+        id: "getMillisecondsExample",
+        frontTitle: "Date Methods",
+        backTitle: "let ms = d.getMilliseconds();",
+        backDescription: "<p>413</p>",
+      },
+      {
+        id: "getMinutesExample",
+        frontTitle: "Date Methods",
+        backTitle: "let minutes = d.getMinutes();",
+        backDescription: "<p>59</p>",
+      },
+      {
+        id: "getMonthExample",
+        frontTitle: "Date Methods",
+        backTitle: "let month = d.getMonth()",
+        backDescription: "<p>7</p>",
+      },
+      {
+        id: "getSecondsExample",
+        frontTitle: "Date Methods",
+        backTitle: "let seconds = d.getSeconds();",
+        backDescription: "<p>15</>",
+      },
+      {
+        id: "getTimeExample",
+        frontTitle: "Date Methods",
+        backTitle: "let time = d.getTime();",
+        backDescription: "<p>1754432002986</p>",
+      },
+      {
+        id: "getTimezoneOffsetExample",
+        frontTitle: "Date Methods",
+        backTitle: "let diff = d.getTimezoneOffset();",
+        backDescription: "<p>240</p>",
+      },
+      {
+        id: "getUTCDateExample",
+        frontTitle: "Date Methods",
+        backTitle: "let day = d.getUTCDate();",
+        backDescription: "<p>5</p>",
+      },
+      {
+        id: "getUTCDayExample",
+        frontTitle: "Date Methods",
+        backTitle: "let day = d.getUTCDay();",
+        backDescription: "<p>2</p>",
+      },
+      {
+        id: "getUTCFullYearExample",
+        frontTitle: "Date Methods",
+        backTitle: "let year = getUTCFullYear();",
+        backDescription: "<p>2025</p>",
+      },
+      {
+        id: "getUTCHoursExample",
+        frontTitle: "Date Methods",
+        backTitle: "let hours = getUTCHours();",
+        backDescription: "<p>22</p>",
+      },
+      {
+        id: "getUTCMillisecondsExample",
+        frontTitle: "getUTCMilliseconds()",
+        backTitle: "let ms = d.getUTCMilliseconds();",
+        backDescription: "<p>662</p>",
+      },
+      {
+        id: "getUTCMinutesExample",
+        frontTitle: "Date Methods",
+        backTitle: "let minutes = d.getUTCMinutes();",
+        backDescription: "<p>59</p>",
+      },
+      {
+        id: "getUTCMonthExample",
+        frontTitle: "Date Methods",
+        backTitle: "let month = d.getUTCMonth();",
+        backDescription: "<p>7</p>",
+      },
+      {
+        id: "getUTCSecondsExample",
+        frontTitle: "Date Methods",
+        backTitle: "let seconds = d.getUTCSeconds();",
+        backDescription: "<p>26</p>",
+      },
+      {
+        id: "nowExample",
+        frontTitle: "Date Methods",
+        backTitle: "let ms = Date.now();",
+        backDescription: "<p>1754435205768</p>",
+      },
+      {
+        id: "parseExample",
+        frontTitle: "Date Methods",
+        backTitle: "let ms = Date.parse('August 5, 2025')",
+        backDescription: "<p>1754366400000</p>",
+      },
+      {
+        id: "setDateExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setDate(20)",
+        backDescription:
+          "<p>Mon Jan 20 2025 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
+      },
+      {
+        id: "setFullYearExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setFullYear(2020)",
+        backDescription:
+          "<p>Tue Jan 14 2020 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
+      },
+      {
+        id: "setHoursExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setHours(15)",
+        backDescription:
+          "<p>Tue Jan 14 2025 15:00:00 GMT-0500 (Eastern Standard Time)</p>",
+      },
+      {
+        id: "setMillisecondsExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setMilliseconds(192)",
+        backDescription: "<p>192</p>",
+      },
+      {
+        id: "setMinutesExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setMinutes(17)",
+        backDescription: "<p>17</p>",
+      },
+      {
+        id: "setMonthExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setMonth(4)",
+        backDescription: "<p>Wed May 14 2025 19:00:00 GMT-0400 (Eastern Daylight Time)</p>",
+      },
+      {
+        id: "setSecondsExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setSeconds(35)",
+        backDescription: "<p>Tue Jan 14 2025 19:00:00 GMT-0500 (Eastern Standard Time)",
+      },
+      {
+        id: "setTimeExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setTime(1332403882588)",
+        backDescription: "<p>Thu March 22 2012 04:11:22 GMT-0400 (Eastern Standard Time)</p>",
+      },
+      {
+        id: "setUTCDateExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setUTCDate(25)",
+        backDescription: "<p>Fri JAn 24 2025 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
+      },
+      {
+        id: "setUTCFullYearExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setUTCFullYear(2015)",
+        backDescription: "<p>Wed Jan 14 2015 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
+      },
+      {
+        id: "setUTCHoursExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setUTCHours(15)",
+        backDescription: "<p>Wed Jan 15 2025 10:00:00 GMT-0500 (Eastern Standard Time)",
+      },
+      {
+        id: "setUTCMillisecondsExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setMilliseconds(192)",
+        backDescription: "<p>192</p>",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "",
+      },
       {
         id: "",
         frontTitle: "",
@@ -251,11 +712,10 @@ const pageData = {
   math: {
     methods: [
       {
-
         id: "",
         frontTitle: "",
         backTitle: "",
-        backDescription: ""
+        backDescription: "",
       },
     ],
     examples: [
