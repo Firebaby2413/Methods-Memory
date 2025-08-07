@@ -328,7 +328,8 @@ const pageData = {
         id: "getUTCMinutesMethod",
         frontTitle: "Date Methods",
         backTitle: "getUTCMinutes()",
-        backDescription: "<p>Returns the minutes of a date, according to UTC.</p>",
+        backDescription:
+          "<p>Returns the minutes of a date, according to UTC.</p>",
       },
       {
         id: "getUTCMonthMethod",
@@ -460,37 +461,43 @@ const pageData = {
         id: "toDateStringMethod",
         frontTitle: "Date Methods",
         backTitle: "toDateString()",
-        backDescription: "<p>Returns the date of a date object as a readable string.</p>",
+        backDescription:
+          "<p>Returns the date of a date object as a readable string.</p>",
       },
       {
         id: "toISOStringMethod",
         frontTitle: "Date Methods",
         backTitle: "toISOString()",
-        backDescription: "<p>Returns the date as string, using ISO standard.</p>",
+        backDescription:
+          "<p>Returns the date as string, using ISO standard.</p>",
       },
       {
         id: "toJSONMethod",
         frontTitle: "Date Methods",
         backTitle: "toJSON()",
-        backDescription: "<p>Returns the date as a string, using JSON date formatting.</p>",
+        backDescription:
+          "<p>Returns the date as a string, using JSON date formatting.</p>",
       },
       {
         id: "toLocaleDateStringMethod",
         frontTitle: "Date Methods",
         backTitle: "toLocaleDateString()",
-        backDescription: "<p>Returns the date (not the time) of a date, as a string, using locale conventions.</p>",
+        backDescription:
+          "<p>Returns the date (not the time) of a date, as a string, using locale conventions.</p>",
       },
       {
         id: "toLocaleTimeStringMethod",
         frontTitle: "Date Methods",
         backTitle: "toLocaleTimeString()",
-        backDescription: "<p>Returns the time portion of a date, as a string, using locale conventions.</p>",
+        backDescription:
+          "<p>Returns the time portion of a date, as a string, using locale conventions.</p>",
       },
       {
         id: "toLocaleStringMethod",
-        frontTitle: "Date Methods", 
+        frontTitle: "Date Methods",
         backTitle: "toLocaleString()",
-        backDescription: "<p>Returns a date as a string, using locale settings.</p>"
+        backDescription:
+          "<p>Returns a date as a string, using locale settings.</p>",
       },
       {
         id: "toStringMethod",
@@ -502,19 +509,22 @@ const pageData = {
         id: "toTimeStringMethod",
         frontTitle: "Date Methods",
         backTitle: "toTimeString()",
-        backDescription: "<p>Returns the time portion of a date object as a string.</p>",
+        backDescription:
+          "<p>Returns the time portion of a date object as a string.</p>",
       },
       {
         id: "toUTCStringMethod",
         frontTitle: "Date Methods",
         backTitle: "toUTCString()",
-        backDescription: "<p>Returns a date object as a string, according to UTC</p>",
+        backDescription:
+          "<p>Returns a date object as a string, according to UTC</p>",
       },
       {
         id: "UTCMethod",
         frontTitle: "Date Methods",
         backTitle: "Date.UTC()",
-        backDescription: "<p>Returns the number of milliseconds between a date and January 1, 1970, according to UTC</p>",
+        backDescription:
+          "<p>Returns the number of milliseconds between a date and January 1, 1970, according to UTC</p>",
       },
       {
         id: "valueOfMethod",
@@ -535,7 +545,8 @@ const pageData = {
         id: "dateConstructorPropertyExample",
         frontTitle: "Date Methods",
         backTitle: "function Date() {[native code]}",
-        backDescription: "<p>const d = new Date()</p><p>let text = d.constructor</p>",
+        backDescription:
+          "<p>const d = new Date()</p><p>let text = d.constructor</p>",
       },
       {
         id: "getDateExample",
@@ -799,7 +810,8 @@ const pageData = {
         id: "toStringExample",
         frontTitle: "Date Methods",
         backTitle: "let text = d.toString();",
-        backDescription: "<p>Wed Aug 06 2025 17:56:43 GMT-0400 (Eastern Daylight Time)</p>",
+        backDescription:
+          "<p>Wed Aug 06 2025 17:56:43 GMT-0400 (Eastern Daylight Time)</p>",
       },
       {
         id: "toTimeStringExample",
@@ -830,18 +842,157 @@ const pageData = {
   map: {
     methods: [
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "createMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "const variableName = new Map([insert array items]);",
+        backDescription: "<p>Create a map from an array.</p>",
+      },
+      {
+        id: "clearMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "clear()",
+        backDescription: "<p>Removes all the elements of a Map<p/>",
+      },
+      {
+        id: "deleteMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "delete()",
+        backDescription: "<p>Deletes an element from a Map</p>",
+      },
+      {
+        id: "entriesMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "entries()",
+        backDescription:
+          "<p>Returns an iterator object with the [key, value] pairs in a Map.</p>",
+      },
+      {
+        id: "forEachMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "map.forEach(callback)",
+        backDescription:
+          "<p>Invokes a function for each key/value pair in a Map.</p>",
+      },
+      {
+        id: "getMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "get()",
+        backDescription: "<p>Method gets the value of a key in a Map.</p>",
+      },
+      {
+        id: "groupByMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "Map.groupBy()",
+        backDescription:
+          "<p>Groups elements of an object according to string values returned from a callback function.</p>",
+      },
+      {
+        id: "hasMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "has()",
+        backDescription: "<p>Returns true if a key exists in a map</p>",
+      },
+      {
+        id: "keysMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "keys()",
+        backDescription: "<p>Returns an iterator object with the keys in a map.</p>",
+      },
+      {
+        id: "setMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "set()",
+        backDescription: "<p>Adds elements to a Map</p>",
+      },
+      {
+        id: "sizePropertyMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: ".size property",
+        backDescription: "<p>Returns the number of elements in a Map.</p>",
+      },
+      {
+        id: "valuesMapMethod",
+        frontTitle: "Map Methods",
+        backTitle: "values()",
+        backDescription: "<p>Returns an iterator object with the values in a map.</p>",
       },
     ],
     examples: [
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "createMapExample",
+        frontTitle: "Map Methods",
+        backTitle:
+          "const fruits = new Map([ ['apples', 500], ['bananas', 300], ['oranges', 200], ]);",
+        backDescription:
+          "<p>Map(3) { 'apples' => 500, 'bananas' => 300, 'oranges' => 200 }</p>",
+      },
+      {
+        id: "clearMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "fruits.clear();",
+        backDescription: "<p>Map(0) {}</p>",
+      },
+      {
+        id: "deleteMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "fruits.delete('apples')",
+        backDescription: "<p>Map(2) {'bananas' => 300, 'oranges' => 200}",
+      },
+      {
+        id: "entriesMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "fruits.entries();",
+        backDescription:
+          "<p>fruits.entires = { [ 'apples', 500 ], [ 'bananas', 300 ],[ 'oranges', 200 ] }</p>",
+      },
+      {
+        id: "forEachMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "fruits.forEach(function(value, key) {text += key + ' = ' + val ' <br >'})",
+        backDescription: "<p>apples = 500, bananas = 300, oranges = 200</p>",
+      },
+      {
+        id: "getMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "let value = fruits.get('apples');",
+        backDescription: "<p>500</p>",
+      },
+      {
+        id: "groupByMapExample",
+        frontTitle: "Map Methods",
+        backTitle:
+          "function myCallback({ quantity }) {return quantity > 200 ? 'ok' : 'low';}",
+        backDescription: "<p>const result = Map.groupBy(fruits, myCallback);</p>",
+      },
+      {
+        id: "hasMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "fruits.has('apples');",
+        backDescription: "<p>true</p>",
+      },
+      {
+        id: "keysMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "for (const x of fruits.keys()) {text += x + '<br>';}",
+        backDescription: "<p>apples, bananas, oranges</p>",
+      },
+      {
+        id: "setMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "const fruits = new Map();",
+        backDescription: "<p>fruits.set('apples', 500);</p>"
+      },
+      {
+        id: "sizePropertyMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "fruits.size;",
+        backDescription: "<p>3</p>",
+      },
+      {
+        id: "valuesMapExample",
+        frontTitle: "Map Methods",
+        backTitle: "for (const x of fruits.values()) { text += x + '<br>';}",
+        backDescription: "<p>500, 300, 200</p>",
       },
     ],
   },
