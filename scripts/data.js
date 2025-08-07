@@ -325,6 +325,12 @@ const pageData = {
         backDescription: "<p>Returns the milliseconds of a date.</p>",
       },
       {
+        id: "getUTCMinutesMethod",
+        frontTitle: "Date Methods",
+        backTitle: "getUTCMinutes()",
+        backDescription: "<p>Returns the minutes of a date, according to UTC.</p>",
+      },
+      {
         id: "getUTCMonthMethod",
         frontTitle: "Date Methods",
         backTitle: "getUTCMonth()",
@@ -395,64 +401,126 @@ const pageData = {
         backDescription: "<p>Sets the seconds of a date object.</p>",
       },
       {
-        id: "settimeMethod",
+        id: "setTimeMethod",
         frontTitle: "Date Methods",
         backTitle: "setTime()",
-        backDescription: "<p>Sets a date by adding milliseconds to January 1, 1970.</p>",
+        backDescription:
+          "<p>Sets a date by adding milliseconds to January 1, 1970.</p>",
       },
       {
         id: "setUTCDateMethod",
         frontTitle: "Date Methods",
         backTitle: "setDateUTC()",
-        backDescription: "<p>Sets the date (according to UTC) of a date object.</p>",
+        backDescription:
+          "<p>Sets the date (according to UTC) of a date object.</p>",
       },
       {
         id: "setUTCFullYearMethod",
         frontTitle: "Date Methods",
         backTitle: "setUTCFullYear()",
-        backDescription: "<p>Sets the year (according to UTC) of a date object.</p>",
+        backDescription:
+          "<p>Sets the year (according to UTC) of a date object.</p>",
       },
       {
         id: "setUTCHoursMethod",
         frontTitle: "Date Methods",
         backTitle: "setUTCHours()",
-        backDescription: "<p>Sets the hour (according to UTC) of a date object.</p>",
+        backDescription:
+          "<p>Sets the hour (according to UTC) of a date object.</p>",
       },
       {
         id: "setUTCMillisecondsMethod",
         frontTitle: "Date Methods",
         backTitle: "setUTCMilliseconds()",
-        backDescription: "<p>Sets the milliseconds (according to UTC time) of a date object.</p>",
+        backDescription:
+          "<p>Sets the milliseconds (according to UTC time) of a date object.</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "setUTCMinutesMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setUTCMinutes()",
+        backDescription:
+          "<p>Sets the minutes (according to UTC time) of a date object.</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "setUTCMonthMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setUTCMonth()",
+        backDescription:
+          "<p>Sets the month (according to UTC time) of a date object.</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "setUTCSecondsMethod",
+        frontTitle: "Date Methods",
+        backTitle: "setUTCSeconds()",
+        backDescription:
+          "<p>Sets the seconds (according to UTC time) of a date object.</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "toDateStringMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toDateString()",
+        backDescription: "<p>Returns the date of a date object as a readable string.</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "toISOStringMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toISOString()",
+        backDescription: "<p>Returns the date as string, using ISO standard.</p>",
+      },
+      {
+        id: "toJSONMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toJSON()",
+        backDescription: "<p>Returns the date as a string, using JSON date formatting.</p>",
+      },
+      {
+        id: "toLocaleDateStringMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toLocaleDateString()",
+        backDescription: "<p>Returns the date (not the time) of a date, as a string, using locale conventions.</p>",
+      },
+      {
+        id: "toLocaleTimeStringMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toLocaleTimeString()",
+        backDescription: "<p>Returns the time portion of a date, as a string, using locale conventions.</p>",
+      },
+      {
+        id: "toLocaleStringMethod",
+        frontTitle: "Date Methods", 
+        backTitle: "toLocaleString()",
+        backDescription: "<p>Returns a date as a string, using locale settings.</p>"
+      },
+      {
+        id: "toStringMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toString()",
+        backDescription: "<p>Returns the date object as a string.</p>",
+      },
+      {
+        id: "toTimeStringMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toTimeString()",
+        backDescription: "<p>Returns the time portion of a date object as a string.</p>",
+      },
+      {
+        id: "toUTCStringMethod",
+        frontTitle: "Date Methods",
+        backTitle: "toUTCString()",
+        backDescription: "<p>Returns a date object as a string, according to UTC</p>",
+      },
+      {
+        id: "UTCMethod",
+        frontTitle: "Date Methods",
+        backTitle: "Date.UTC()",
+        backDescription: "<p>Returns the number of milliseconds between a date and January 1, 1970, according to UTC</p>",
+      },
+      {
+        id: "valueOfMethod",
+        frontTitle: "Date Methods",
+        backTitle: "valueOf()",
+        backDescription: "<p>Returns the primitive value of a date object.</p>",
       },
     ],
     examples: [
@@ -467,8 +535,7 @@ const pageData = {
         id: "dateConstructorPropertyExample",
         frontTitle: "Date Methods",
         backTitle: "function Date() {[native code]}",
-        backDescription:
-          "<p>const d = new Date()</p><p>let text = d.constructor</p>",
+        backDescription: "<p>const d = new Date()</p><p>let text = d.constructor</p>",
       },
       {
         id: "getDateExample",
@@ -627,37 +694,43 @@ const pageData = {
         id: "setMonthExample",
         frontTitle: "Date Methods",
         backTitle: "d.setMonth(4)",
-        backDescription: "<p>Wed May 14 2025 19:00:00 GMT-0400 (Eastern Daylight Time)</p>",
+        backDescription:
+          "<p>Wed May 14 2025 19:00:00 GMT-0400 (Eastern Daylight Time)</p>",
       },
       {
         id: "setSecondsExample",
         frontTitle: "Date Methods",
         backTitle: "d.setSeconds(35)",
-        backDescription: "<p>Tue Jan 14 2025 19:00:00 GMT-0500 (Eastern Standard Time)",
+        backDescription:
+          "<p>Tue Jan 14 2025 19:00:00 GMT-0500 (Eastern Standard Time)",
       },
       {
         id: "setTimeExample",
         frontTitle: "Date Methods",
         backTitle: "d.setTime(1332403882588)",
-        backDescription: "<p>Thu March 22 2012 04:11:22 GMT-0400 (Eastern Standard Time)</p>",
+        backDescription:
+          "<p>Thu March 22 2012 04:11:22 GMT-0400 (Eastern Standard Time)</p>",
       },
       {
         id: "setUTCDateExample",
         frontTitle: "Date Methods",
         backTitle: "d.setUTCDate(25)",
-        backDescription: "<p>Fri JAn 24 2025 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
+        backDescription:
+          "<p>Fri JAn 24 2025 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
       },
       {
         id: "setUTCFullYearExample",
         frontTitle: "Date Methods",
         backTitle: "d.setUTCFullYear(2015)",
-        backDescription: "<p>Wed Jan 14 2015 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
+        backDescription:
+          "<p>Wed Jan 14 2015 19:00:00 GMT-0500 (Eastern Standard Time)</p>",
       },
       {
         id: "setUTCHoursExample",
         frontTitle: "Date Methods",
         backTitle: "d.setUTCHours(15)",
-        backDescription: "<p>Wed Jan 15 2025 10:00:00 GMT-0500 (Eastern Standard Time)",
+        backDescription:
+          "<p>Wed Jan 15 2025 10:00:00 GMT-0500 (Eastern Standard Time)",
       },
       {
         id: "setUTCMillisecondsExample",
@@ -666,28 +739,91 @@ const pageData = {
         backDescription: "<p>192</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "setUTCMinutesExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setUTCMinutes(17)",
+        backDescription:
+          "<p>Tue Jan 14 2025 19:17:00 GMT-0500 (Eastern Standard Time)</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "setUTCMonthExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setUTCMonth(4)",
+        backDescription:
+          "<p>Wed May 14 2025 20:00:00 GMT-0400 (Eastern Daylight Time)</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "setUTCSecondsExample",
+        frontTitle: "Date Methods",
+        backTitle: "d.setsUTCSeconds(35)",
+        backDescription:
+          "<p>Tue Jan 14 2025 19:00:35 GMT-0500 (Eastern Standard Time)</p>",
       },
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "toDateStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toDateString();",
+        backDescription: "<p>Wed Aug 06 2025</p>",
+      },
+      {
+        id: "toISOStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toISOString();",
+        backDescription: "<p>2025-08-06T21:21:45.234Z</p>",
+      },
+      {
+        id: "toJSONExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toJSON();",
+        backDescription: "<p>2025-08-06T21:25:06.449Z</p>",
+      },
+      {
+        id: "toLocaleDateStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toLocaleDateString();",
+        backDescription: "<p>8/6/2025</p>",
+      },
+      {
+        id: "toLocaleTimeStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toLocaleTimeString();",
+        backDescription: "<p>5:51:19PM</p>",
+      },
+      {
+        id: "toLocaleStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toLocaleString();",
+        backDescription: "<p>8/6/2025, 5:53:45 PM</p>",
+      },
+      {
+        id: "toStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toString();",
+        backDescription: "<p>Wed Aug 06 2025 17:56:43 GMT-0400 (Eastern Daylight Time)</p>",
+      },
+      {
+        id: "toTimeStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = toTimeString();",
+        backDescription: "<p>19:05:49 GMT-0400 (Eastern Daylight Time)</p>",
+      },
+      {
+        id: "toUTCStringExample",
+        frontTitle: "Date Methods",
+        backTitle: "let text = d.toUTCString();",
+        backDescription: "<p>Wed, 06 Aug 2025 23:08:15 GMT</p>",
+      },
+      {
+        id: "UTCExample",
+        frontTitle: "Date Methods",
+        backTitle: "let ms = Date.UTC(2020, 02, 30);",
+        backDescription: "<p>1585526400000</p>",
+      },
+      {
+        id: "valueOfExample",
+        frontTitle: "Date Methods",
+        backTitle: "let ms = d.valueOf();",
+        backDescription: "<p>1754522028647</p>",
       },
     ],
   },
