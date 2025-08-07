@@ -996,7 +996,7 @@ const pageData = {
       },
     ],
   },
-  math: {
+  math: { //42//
     methods: [
       {
         id: "",
@@ -1005,7 +1005,7 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [
+    examples: [ //42//
       {
         id: "",
         frontTitle: "",
@@ -1014,8 +1014,8 @@ const pageData = {
       },
     ],
   },
-  number: {
-    methods: [
+  number: { 
+    methods: [ //22//
       {
         id: "",
         frontTitle: "",
@@ -1023,7 +1023,7 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [
+    examples: [ //22//
       {
         id: "",
         frontTitle: "",
@@ -1033,7 +1033,7 @@ const pageData = {
     ],
   },
   object: {
-    methods: [
+    methods: [ //22//
       {
         id: "",
         frontTitle: "",
@@ -1041,7 +1041,7 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [
+    examples: [ //22//
       {
         id: "",
         frontTitle: "",
@@ -1050,8 +1050,8 @@ const pageData = {
       },
     ],
   },
-  set: {
-    methods: [
+  set: { 
+    methods: [ //16//
       {
         id: "",
         frontTitle: "",
@@ -1059,7 +1059,7 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [
+    examples: [ //16//
       {
         id: "",
         frontTitle: "",
@@ -1069,7 +1069,7 @@ const pageData = {
     ],
   },
   string: {
-    methods: [
+    methods: [ //37//
       {
         id: "",
         frontTitle: "",
@@ -1077,7 +1077,7 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [
+    examples: [ //37//
       {
         id: "",
         frontTitle: "",
