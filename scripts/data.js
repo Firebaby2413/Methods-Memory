@@ -1,4 +1,22 @@
 const pageData = {
+  instructions: {
+    methods: [
+      {
+        id: "instructionMethod",
+        frontTitle: "Methods Group",
+        backTitle: "Method name",
+        backDescription: "<p>What it does</p>",
+      }
+    ], 
+    examples: [
+      {
+        id: "instructionExample",
+        frontTitle: "Methods Group",
+        backTitle: "Syntax",
+        backDescription: "<p>Example</p>",
+      }
+    ],
+  },
   array: {
     methods: [
       {
@@ -1531,18 +1549,18 @@ const pageData = {
       //22//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "Number Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
     examples: [
       //22//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "Number Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
   },
@@ -1551,18 +1569,18 @@ const pageData = {
       //22//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "Object Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
     examples: [
       //22//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "Object Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
   },
@@ -1571,18 +1589,18 @@ const pageData = {
       //16//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "Set Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
     examples: [
       //16//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "Set Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
   },
@@ -1591,18 +1609,18 @@ const pageData = {
       //37//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
     examples: [
       //37//
       {
         id: "",
-        frontTitle: "",
+        frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "",
+        backDescription: "<p></p>",
       },
     ],
   },

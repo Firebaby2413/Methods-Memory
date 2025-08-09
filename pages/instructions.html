@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/b0201ea9e5.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../scripts/data.js" type="module" defer></script>
+    <script src="../scripts/memorygame.js" type="module" defer></script>
     <script src="../scripts/scripts.js" defer></script>
   </head>
   <body>
@@ -102,8 +102,8 @@
           <ol class="instructions-list">
             <li>Select the methods you wish to practice</li>
             <li>Navigate to the appropriate page</li>
-            <li>Flip a card to get the name of a method</li>
-            <li>Find the example that matches</li>
+            <li>Click start to begin the memory game</li>
+            <li>Find the example that matches the method</li>
             <li>Practice until you understand methods!</li>
           </ol>
         </div>
@@ -112,8 +112,20 @@
           <h1>Pick the match:</h1>
         </div>
 
-        <div class="card-area">
-          <div class="card one">
+          <div class="main-content">
+      <div class="game-container">
+        <div class="game-header">
+          <div class="title">Map Methods Memory Game</div>
+          <div class="game-controls">
+            <div class="game-info">
+              <p>Moves: <span id="move-counter">0</span></p>
+              <p>Timer: <span id="timer">00:00</span></p>
+            </div>
+            <button id="restart-btn">Start Game</button>
+          </div>
+        </div>
+        <div id="card-area" class="game-grid">
+          <div class="card">
             <div class="front">
               <h3 class="method-type">Method Group</h3>
             </div>
