@@ -6,15 +6,15 @@ const pageData = {
         frontTitle: "Methods Group",
         backTitle: "Method name",
         backDescription: "<p>What it does</p>",
-      }
-    ], 
+      },
+    ],
     examples: [
       {
         id: "instructionExample",
         frontTitle: "Methods Group",
         backTitle: "Syntax",
         backDescription: "<p>Example</p>",
-      }
+      },
     ],
   },
   array: {
@@ -1166,7 +1166,8 @@ const pageData = {
         id: "mathLogMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.log()",
-        backDescription: "<p>Returns the natural logarithm (base E) of a number.</p>",
+        backDescription:
+          "<p>Returns the natural logarithm (base E) of a number.</p>",
       },
       {
         id: "mathLog10Method",
@@ -1178,7 +1179,8 @@ const pageData = {
         id: "mathLog1PMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.log1p()",
-        backDescription: "<p>Returns the natural logarithm (base E) of 1 + a number.</p>",
+        backDescription:
+          "<p>Returns the natural logarithm (base E) of 1 + a number.</p>",
       },
       {
         id: "mathLog2Method",
@@ -1190,13 +1192,15 @@ const pageData = {
         id: "mathLOG2EMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.LOG2E",
-        backDescription: "<p>Property returns the base-2 logarithm of E, approximately 1.442</p>",
+        backDescription:
+          "<p>Property returns the base-2 logarithm of E, approximately 1.442</p>",
       },
       {
         id: "mathLOG10EMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.LOG10E",
-        backDescription: "<p>Property returns the base-10 logarithm of E, approximately 0.434.</p>",
+        backDescription:
+          "<p>Property returns the base-10 logarithm of E, approximately 0.434.</p>",
       },
       {
         id: "mathMaxMethod",
@@ -1214,19 +1218,22 @@ const pageData = {
         id: "mathPIMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.PI",
-        backDescription: "<p>Returns PI (the ratio of a circle's area to the square of its radius, approximately 3.14)</p>",
+        backDescription:
+          "<p>Returns PI (the ratio of a circle's area to the square of its radius, approximately 3.14)</p>",
       },
       {
         id: "mathPowMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.pow()",
-        backDescription: "<p>Returns the value of x to the power of y (xy).</p>",
+        backDescription:
+          "<p>Returns the value of x to the power of y (xy).</p>",
       },
       {
         id: "mathRandomMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.random()",
-        backDescription: "<p>Returns a random number between 0 (inclusive) and 1 (exclusive)</p>",
+        backDescription:
+          "<p>Returns a random number between 0 (inclusive) and 1 (exclusive)</p>",
       },
       {
         id: "mathRoundMethod",
@@ -1238,13 +1245,15 @@ const pageData = {
         id: "mathSignMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.sign()",
-        backDescription: "<p>Returns whether a number is negative, positive or zero as 1, 0, or -1.</p>",
+        backDescription:
+          "<p>Returns whether a number is negative, positive or zero as 1, 0, or -1.</p>",
       },
       {
         id: "MathSinMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.sin()",
-        backDescription: "<p>Returns the sine of an angle given in radians.</p>",
+        backDescription:
+          "<p>Returns the sine of an angle given in radians.</p>",
       },
       {
         id: "mathSinhMethod",
@@ -1262,13 +1271,15 @@ const pageData = {
         id: "mathSQRT1_2Method",
         frontTitle: "Math Methods",
         backTitle: "Math.SQRT1_2",
-        backDescription: "<p>Property returns the square root of 1/2, approximately 0.707.</p>",
+        backDescription:
+          "<p>Property returns the square root of 1/2, approximately 0.707.</p>",
       },
       {
         id: "mathSQRT2Method",
         frontTitle: "Math Methods",
         backTitle: "Math.SQRT2",
-        backDescription: "<p>Property returns the square root of 2, approximately 1.414.</p>",
+        backDescription:
+          "<p>Property returns the square root of 2, approximately 1.414.</p>",
       },
       {
         id: "mathTanMethod",
@@ -1286,7 +1297,8 @@ const pageData = {
         id: "mathTruncMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.trunc()",
-        backDescription: "<p>Returns the integer part of a number, removing the decimals without rounding.</p>",
+        backDescription:
+          "<p>Returns the integer part of a number, removing the decimals without rounding.</p>",
       },
     ],
     examples: [
@@ -1419,7 +1431,8 @@ const pageData = {
       {
         id: "mathLogExample",
         frontTitle: "Math Methods",
-        backTitle: "Math.log(-0), Math.log(-1), Math.log(Infinity), Math.log(-Infinity)",
+        backTitle:
+          "Math.log(-0), Math.log(-1), Math.log(Infinity), Math.log(-Infinity)",
         backDescription: "<p>-Infinity, NaN, Infinity</p>",
       },
       {
@@ -1546,27 +1559,422 @@ const pageData = {
   },
   number: {
     methods: [
-      //22//
       {
-        id: "",
+        id: "NumberConstructorMethod",
         frontTitle: "Number Methods",
-        backTitle: "",
-        backDescription: "<p></p>",
+        backTitle: "num.constructor",
+        backDescription:
+          "<p>Property returns the function that created the Number prototype.</p>",
+      },
+      {
+        id: "numberEpsilonMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.EPSILON",
+        backDescription:
+          "<p>Returns the difference between the smallest floating point number greater than 1 and 1.</p>",
+      },
+      {
+        id: "numberIsFiniteMEthod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isFinite()",
+        backDescription:
+          "<p>Returns `true` if a number is a finite number.</p>",
+      },
+      {
+        id: "numberIsIntegerMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isInteger()",
+        backDescription:
+          "<p>Returns `true` if a value is an integer of the datatype Number, `false` if not.</p>",
+      },
+      {
+        id: "numberIsNaNMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isNAN()",
+        backDescription:
+          "<p>Returns `true` if value is NaN, and the type is a Number.</p>",
+      },
+      {
+        id: "numberIsSafeIntegerMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isSafeInteger()",
+        backDescription:
+          "<p>Returns `true` if a number is a safe integer, `false` if not.</p>",
+      },
+      {
+        id: "numberMaxSafeIntegerMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MAX_SAFE_INTEGER",
+        backDescription:
+          "<p>Represents the maximum safe number in JavaScript.</p>",
+      },
+      {
+        id: "numberMinSafeIntegerMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MIN_SAFE_INTEGER",
+        backDescription:
+          "<p>Represents the minimum safe integer in JavaScript.</p>",
+      },
+      {
+        id: "numberMaxValueMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MAX_VALUE",
+        backDescription:
+          "<p>Returns the largest number possible in JavaScript.</p>",
+      },
+      {
+        id: "numberMinValueMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MIN_VALUE",
+        backDescription: "<p>Returns the smallest number in Javascript.</p>",
+      },
+      {
+        id: "numberNaNMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.NaN",
+        backDescription:
+          "<p>Short for `Not-a-Number`, is a number that is not a legal number in JavaScript.</p>",
+      },
+      {
+        id: "numberNegativeInfinityMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.NEGATIVE_INFINITY",
+        backDescription:
+          "<p>Returns negative infinity, `a number lower than any other number`.</p>",
+      },
+      {
+        id: "numberPositiveInfinityMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.POSITIVE_INFINITY",
+        backDescription:
+          "<p>Returns positive infinity, `something higher than any other number`.</p>",
+      },
+      {
+        id: "numberParseFloatMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.parseFloat()",
+        backDescription:
+          "<p>Parses a value as a string and returns the first number.</p>",
+      },
+      {
+        id: "numberParseIntMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.parseInt()",
+        backDescription:
+          "<p>Parses a value as a string and returns it as the first integer.</p>",
+      },
+      {
+        id: "numberPrototypeMethod",
+        frontTitle: "Number Methods",
+        backTitle: "Number.prototype",
+        backDescription:
+          "<p>Property that allows you to add new properties and methods to numbers.</p>",
+      },
+      {
+        id: "numberToExponentialMethod",
+        frontTitle: "Number Methods",
+        backTitle: "number.toExponential()",
+        backDescription:
+          "<p>Converts a number into an exponential notation.</p>",
+      },
+      {
+        id: "numberToFixedMethod",
+        frontTitle: "Number Methods",
+        backTitle: "number.ToFixed()",
+        backDescription:
+          "<p>Converts a number to a string, rounding to a specified number of decimals.</p>",
+      },
+      {
+        id: "numberToLocaleStringMethod",
+        frontTitle: "Number Methods",
+        backTitle: "number.toLocaleString()",
+        backDescription:
+          "<p>Returns a number as a string, using local language format.</p>",
+      },
+      {
+        id: "numberToPrecisionMethod",
+        frontTitle: "Number Methods",
+        backTitle: "number.toPRecision()",
+        backDescription:
+          "<p>Formats a number to a specified length, adding a decimal point and nulls as needed to create the specified length.</p>",
+      },
+      {
+        id: "numberToString",
+        frontTitle: "Number Methods",
+        backTitle: "number.toString()",
+        backDescription: "<p>Returns a number as a string.</p>",
+      },
+      {
+        id: "numberValueOfMethod",
+        frontTitle: "Number Methods",
+        backTitle: "number.valueOf",
+        backDescription: "<p>Returns the primitive value of a number.</p>",
       },
     ],
     examples: [
-      //22//
       {
-        id: "",
+        id: "numberConstructorExample",
         frontTitle: "Number Methods",
-        backTitle: "",
-        backDescription: "<p></p>",
+        backTitle: "let text = num.constructor",
+        backDescription: "<p>function Number() { [native code] }</p>",
+      },
+      {
+        id: "numberEpsilonExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.EPSILON",
+        backDescription: "<p>2.220446049250313e-16</p>",
+      },
+      {
+        id: "numberIsFiniteExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isFinite(123)",
+        backDescription: "<p>true</p>",
+      },
+      {
+        id: "numberIsIntegerExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isInteger(123)",
+        backDescription: "<p>true</p>",
+      },
+      {
+        id: "numberIsNaNExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isNaN(123)",
+        backDescription: "<p>false</p>",
+      },
+      {
+        id: "numberIsSafeIntegerExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.isSafeInteger(123)",
+        backDescription: "<p>true</p>",
+      },
+      {
+        id: "numberMaxSafeIntegerExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MAX_SAFE_INTEGER",
+        backDescription: "<p>(2^53 - 1) or 9007199254740991</p>",
+      },
+      {
+        id: "numberMinSafeIntegerExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MIN_SAFE_INTEGER",
+        backDescription: "<p>-(2^53 - 1)or -9007199254740991</p>",
+      },
+      {
+        id: "numberMaxValueExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MAX_VALUE",
+        backDescription: "<p>1.7976931348623157e+308</p>",
+      },
+      {
+        id: "numberMinValueExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.MIN_VALUE",
+        backDescription: "<p>5e-324</p>",
+      },
+      {
+        id: "numberNaNExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.NaN",
+        backDescription: "<p>NaN</p>",
+      },
+      {
+        id: "numberNegativeInfinityExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.NEGATIVE_INFINITY",
+        backDescription: "<p>-Infinity</p>",
+      },
+      {
+        id: "numberPositiveInfinityExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.POSITIVE_INFINITY",
+        backDescription: "<p>Infinity</p>",
+      },
+      {
+        id: "numberParseFloatExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.ParseFloat(10)",
+        backDescription: "<p>10</p>",
+      },
+      {
+        id: "numberParseIntExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.parseInt('10')",
+        backDescription: "<p>10</p>",
+      },
+      {
+        id: "numberPrototypeExample",
+        frontTitle: "Number Methods",
+        backTitle: "Number.prototype.myMethod =",
+        backDescription: "<p>function() {return this.valueOf() / 2;};</p>",
+      },
+      {
+        id: "numberToExponentialExample",
+        frontTitle: "Number Methods",
+        backTitle: "let num = 5.56789; let n = num.toExponential()",
+        backDescription: "<p>5.56789e+0</p>",
+      },
+      {
+        id: "numberToFixedExample",
+        frontTitle: "Number Methods",
+        backTitle: "let num = 5.56789; let n = num.toFixed(2);",
+        backDescription: "<p>6</p>",
+      },
+      {
+        id: "numberToLocaleStringExample",
+        frontTitle: "Number Methods",
+        backTitle:
+          "let text = num.toLocaleString('en-US', {style:'currency', currency:'USD'});",
+        backDescription: "<p>$1,000,000.00</p>",
+      },
+      {
+        id: "numberToPrecisionExample",
+        frontTitle: "Number Methods",
+        backTitle: "let num = 13.3714; let n = num.toPrecision(2);",
+        backDescription: "<p>13</p>",
+      },
+      {
+        id: "numberToStringExample",
+        frontTitle: "Number Methods",
+        backTitle: "let num = 15; let text = num.toString();",
+        backDescription: "<p>15</p>",
+      },
+      {
+        id: "numberToValueExample",
+        frontTitle: "Number Methods",
+        backTitle: "let num = 15; let n = num.valueOf()",
+        backDescription: "<p15</p>",
       },
     ],
   },
   object: {
     methods: [
-      //22//
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
       {
         id: "",
         frontTitle: "Object Methods",
@@ -1575,7 +1983,132 @@ const pageData = {
       },
     ],
     examples: [
-      //22//
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
       {
         id: "",
         frontTitle: "Object Methods",
@@ -1586,7 +2119,96 @@ const pageData = {
   },
   set: {
     methods: [
-      //16//
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
       {
         id: "",
         frontTitle: "Set Methods",
@@ -1595,7 +2217,96 @@ const pageData = {
       },
     ],
     examples: [
-      //16//
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
       {
         id: "",
         frontTitle: "Set Methods",
@@ -1606,7 +2317,222 @@ const pageData = {
   },
   string: {
     methods: [
-      //37//
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
       {
         id: "",
         frontTitle: "String Methods",
@@ -1615,7 +2541,222 @@ const pageData = {
       },
     ],
     examples: [
-      //37//
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
       {
         id: "",
         frontTitle: "String Methods",
