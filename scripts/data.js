@@ -634,7 +634,7 @@ const pageData = {
       },
       {
         id: "getUTCMillisecondsExample",
-        frontTitle: "getUTCMilliseconds()",
+        frontTitle: "Date Methods",
         backTitle: "let ms = d.getUTCMilliseconds();",
         backDescription: "<p>662</p>",
       },
@@ -896,7 +896,8 @@ const pageData = {
         id: "keysMapMethod",
         frontTitle: "Map Methods",
         backTitle: "keys()",
-        backDescription: "<p>Returns an iterator object with the keys in a map.</p>",
+        backDescription:
+          "<p>Returns an iterator object with the keys in a map.</p>",
       },
       {
         id: "setMapMethod",
@@ -914,7 +915,8 @@ const pageData = {
         id: "valuesMapMethod",
         frontTitle: "Map Methods",
         backTitle: "values()",
-        backDescription: "<p>Returns an iterator object with the values in a map.</p>",
+        backDescription:
+          "<p>Returns an iterator object with the values in a map.</p>",
       },
     ],
     examples: [
@@ -948,7 +950,8 @@ const pageData = {
       {
         id: "forEachMapExample",
         frontTitle: "Map Methods",
-        backTitle: "fruits.forEach(function(value, key) {text += key + ' = ' + val ' <br >'})",
+        backTitle:
+          "fruits.forEach(function(value, key) {text += key + ' = ' + val ' <br >'})",
         backDescription: "<p>apples = 500, bananas = 300, oranges = 200</p>",
       },
       {
@@ -962,7 +965,8 @@ const pageData = {
         frontTitle: "Map Methods",
         backTitle:
           "function myCallback({ quantity }) {return quantity > 200 ? 'ok' : 'low';}",
-        backDescription: "<p>const result = Map.groupBy(fruits, myCallback);</p>",
+        backDescription:
+          "<p>const result = Map.groupBy(fruits, myCallback);</p>",
       },
       {
         id: "hasMapExample",
@@ -980,7 +984,7 @@ const pageData = {
         id: "setMapExample",
         frontTitle: "Map Methods",
         backTitle: "const fruits = new Map();",
-        backDescription: "<p>fruits.set('apples', 500);</p>"
+        backDescription: "<p>fruits.set('apples', 500);</p>",
       },
       {
         id: "sizePropertyMapExample",
@@ -996,26 +1000,535 @@ const pageData = {
       },
     ],
   },
-  math: { //42//
+  math: {
     methods: [
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "mathAbsoluteMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.abs()",
+        backDescription: "<p>Returns the absolute value of a number.</p>",
+      },
+      {
+        id: "mathAcosMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.acos()",
+        backDescription:
+          "<p>Returns the arccosine (trigonometry) (in radians) of a number, returns a value between 0 and PI, and expects a range between -1 to 1.</p>",
+      },
+      {
+        id: "mathAcoshMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.acosh()",
+        backDescription:
+          "<p>Returns the hyperbolic arc-cosine of a number. If the parameter is less than 1, it returns NaN.</p>",
+      },
+      {
+        id: "mathAsinMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.asin()",
+        backDescription:
+          "<p>Returns the arcsine (trigonometry) (in radians) of a number, returns a value between -PI/2 and PI/2, expects a parameter in teh range -1 to 1.</p>",
+      },
+      {
+        id: "mathAsinhMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.asinh()",
+        backDescription: "<p>Returns the hyperbolic arc-sine of a number.</p>",
+      },
+      {
+        id: "mathAtanMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.atan()",
+        backDescription:
+          "<p>Returns the arctangent (trigonometry) (in radians) of a number.</p>",
+      },
+      {
+        id: "mathAtan2Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.atan2()",
+        backDescription:
+          "<p>Returns the arctangent of a quotient of its arguments, as a numeric value between PI and -PI radians.</p>",
+      },
+      {
+        id: "mathAtanhMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.atanh()",
+        backDescription:
+          "<p>Returns the hyperbolic arctangent of a number, expects a number between -1 and 1.</p>",
+      },
+      {
+        id: "mathCbrtMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.cbrt()",
+        backDescription: "<p>Returns the cubic root of a number.</p>",
+      },
+      {
+        id: "mathCeilMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.ceil()",
+        backDescription:
+          "<p>Rounds a number rounded UP to the nearest integer</p>",
+      },
+      {
+        id: "mathClz32Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.clz32()",
+        backDescription:
+          "<p>Returns the number of leading zeros in a 32-bit binary number.</p>",
+      },
+      {
+        id: "mathCosMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.cos()",
+        backDescription:
+          "<p>Returns the cosine of an angel given in radians between -1 and 1, expecting the number in radians.</p>",
+      },
+      {
+        id: "mathCoshMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.cosh()",
+        backDescription: "<p>Returns the hyperbolic cosine of a number.</p>",
+      },
+      {
+        id: "mathEMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.E",
+        backDescription:
+          "<p>Returns Euler's number (the base of natural logarithms), approximately 2.718.</p>",
+      },
+      {
+        id: "mathExpMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.exp()",
+        backDescription:
+          "<p>Returns the value of Ex, where E is Euler's number (approximately 2.7183) and x is the number passed to it.</p>",
+      },
+      {
+        id: "mathExpm1Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.expm1()",
+        backDescription:
+          "<p>Returns the value of Ex minus 1, where E is Euler's number (approximately 2.7183) and x is the number passed to it.</p>",
+      },
+      {
+        id: "mathF16RoundMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.f16round()",
+        backDescription:
+          "<p>Returns the nearest 16-bit single precision floating point representation of a number.</p>",
+      },
+      {
+        id: "mathFloorMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.floor()",
+        backDescription: "<p>Rounds a number DOWN to the nearest integer.</p>",
+      },
+      {
+        id: "mathFRoundMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.fround()",
+        backDescription:
+          "<p>Returns the nearest 32-bit single precision float representation of a number.</p>",
+      },
+      {
+        id: "mathLN2Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LN2",
+        backDescription:
+          "<p>Property that returns the natural logarithm of 2, usually rounded to 0.693.</p>",
+      },
+      {
+        id: "mathLN10Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LN10",
+        backDescription:
+          "<p>Property returns the natural logarithm of 10, usually rounded to 2.302.</p>",
+      },
+      {
+        id: "mathLogMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log()",
+        backDescription: "<p>Returns the natural logarithm (base E) of a number.</p>",
+      },
+      {
+        id: "mathLog10Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log10()",
+        backDescription: "<p>Returns the base-10 logarithm of a number.</p>",
+      },
+      {
+        id: "mathLog1PMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log1p()",
+        backDescription: "<p>Returns the natural logarithm (base E) of 1 + a number.</p>",
+      },
+      {
+        id: "mathLog2Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log2()",
+        backDescription: "<p>Returns the base 2 logarithm of a number.</p>",
+      },
+      {
+        id: "mathLOG2EMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LOG2E",
+        backDescription: "<p>Property returns the base-2 logarithm of E, approximately 1.442</p>",
+      },
+      {
+        id: "mathLOG10EMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LOG10E",
+        backDescription: "<p>Property returns the base-10 logarithm of E, approximately 0.434.</p>",
+      },
+      {
+        id: "mathMaxMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.max()",
+        backDescription: "<p>Returns the number with the highest value.</p>",
+      },
+      {
+        id: "mathMinMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.min()",
+        backDescription: "<p>Returns the number with the lowest value.</p>",
+      },
+      {
+        id: "mathPIMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.PI",
+        backDescription: "<p>Returns PI (the ratio of a circle's area to the square of its radius, approximately 3.14)</p>",
+      },
+      {
+        id: "mathPowMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.pow()",
+        backDescription: "<p>Returns the value of x to the power of y (xy).</p>",
+      },
+      {
+        id: "mathRandomMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.random()",
+        backDescription: "<p>Returns a random number between 0 (inclusive) and 1 (exclusive)</p>",
+      },
+      {
+        id: "mathRoundMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.round()",
+        backDescription: "<p>Rounds a number to the nearest integer.<p>",
+      },
+      {
+        id: "mathSignMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sign()",
+        backDescription: "<p>Returns whether a number is negative, positive or zero as 1, 0, or -1.</p>",
+      },
+      {
+        id: "MathSinMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sin()",
+        backDescription: "<p>Returns the sine of an angle given in radians.</p>",
+      },
+      {
+        id: "mathSinhMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sinh()",
+        backDescription: "<p>Returns the hyperbolic sine of a number.</p>",
+      },
+      {
+        id: "mathSqrtMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sqrt()",
+        backDescription: "<p>Returns the square root of a number.</p>",
+      },
+      {
+        id: "mathSQRT1_2Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.SQRT1_2",
+        backDescription: "<p>Property returns the square root of 1/2, approximately 0.707.</p>",
+      },
+      {
+        id: "mathSQRT2Method",
+        frontTitle: "Math Methods",
+        backTitle: "Math.SQRT2",
+        backDescription: "<p>Property returns the square root of 2, approximately 1.414.</p>",
+      },
+      {
+        id: "mathTanMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.tan()",
+        backDescription: "<p>Returns the tangent of a number.</p>",
+      },
+      {
+        id: "mathTanHMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.tanh()",
+        backDescription: "<p>Returns the hyperbolic tangent of a number.</p>",
+      },
+      {
+        id: "mathTruncMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.trunc()",
+        backDescription: "<p>Returns the integer part of a number, removing the decimals without rounding.</p>",
       },
     ],
-    examples: [ //42//
+    examples: [
       {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "",
+        id: "mathAbsoluteExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.abs(-7.25)",
+        backDescription: "<p>7.25</p>",
+      },
+      {
+        id: "mathAcosExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.acos(-1), Math.acos(0), Math.acos(1)",
+        backDescription: "<p>3.141592653589793, 1.5707963267948966, 0</p>",
+      },
+      {
+        id: "mathAcoshExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.acosh(.5), Math.acosh(1), Math.acosh(2)",
+        backDescription: "<p>NaN, 0, 1.3169578969248166</p>",
+      },
+      {
+        id: "mathAsinExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.asin(-1), Math.asin(0), Math.asin(1)",
+        backDescription: "<p>-1.5707963267948966, 0, 1.5707963267948966</p>",
+      },
+      {
+        id: "mathAsinhExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.asinh(0), Math.asinh(1)",
+        backDescription: "<p>0, 0.881373587019543</p>",
+      },
+      {
+        id: "mathAtanExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.atan(2)",
+        backDescription: "<p>1.1071487177940904</p>",
+      },
+      {
+        id: "mathAtan2Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.atan2(8,4)",
+        backDescription: "<p>1.1071487177940904</p>",
+      },
+      {
+        id: "mathAtanhExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.atanh(0.5), Math.atanh(1), Math.atanh(-1)",
+        backDescription: "<p>0.5493061443340548, Infinity, -Infinity</p>",
+      },
+      {
+        id: "mathCbrtExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.cbrt(125);",
+        backDescription: "<p>5</p>",
+      },
+      {
+        id: "mathCeilExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.ceil(1.4)",
+        backDescription: "<p>Rounds a number UP to the nearest integer.</p>",
+      },
+      {
+        id: "mathClz32Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.clz32(0)",
+        backDescription: "<p>32</p>",
+      },
+      {
+        id: "mathCosExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.cos(0)",
+        backDescription: "<p>1.00</p>",
+      },
+      {
+        id: "mathCoshExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.cosh(3)",
+        backDescription: "<p>10.067661995777765</p>",
+      },
+      {
+        id: "mathEExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.E",
+        backDescription: "<p>2.718281828459045</p>",
+      },
+      {
+        id: "mathExpExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.exp(3)",
+        backDescription: "<p>20.085536923187668</p>",
+      },
+      {
+        id: "mathExpm1Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.expm1(3)",
+        backDescription: "<p>19.085536923187668</p>",
+      },
+      {
+        id: "mathF16RoundExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.f16round(2.60)",
+        backDescription: "<p>2.599609375</p>",
+      },
+      {
+        id: "mathFloorExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.floor(0.60)",
+        backDescription: "<p>0</p>",
+      },
+      {
+        id: "mathFRoundExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.fround(2.60)",
+        backDescription: "<p>2.5999999046325684</p>",
+      },
+      {
+        id: "mathLN2Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LN2",
+        backDescription: "<p>0.6931471805599453</p>",
+      },
+      {
+        id: "mathLN10Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LN10",
+        backDescription: "<p>2.302585092994046</p>",
+      },
+      {
+        id: "mathLogExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log(-0), Math.log(-1), Math.log(Infinity), Math.log(-Infinity)",
+        backDescription: "<p>-Infinity, NaN, Infinity</p>",
+      },
+      {
+        id: "mathLog10Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log10(2)",
+        backDescription: "<p>0.3010299956639812</p>",
+      },
+      {
+        id: "mathLog1PExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log1p(2.7183)",
+        backDescription: "<p>1.3132665745863341</p>",
+      },
+      {
+        id: "mathLog2Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.log2(3)",
+        backDescription: "<p>1.584962500721156</p>",
+      },
+      {
+        id: "mathLOG2EExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LOG2E",
+        backDescription: "<p>1.4426950408889634</p>",
+      },
+      {
+        id: "mathLOG10EExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LOG10E",
+        backDescription: "<p>0.4342944819032518</p>",
+      },
+      {
+        id: "mathMaxExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.max(5, 10)",
+        backDescription: "<p>10</p>",
+      },
+      {
+        id: "mathMinExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.min(5, 10)",
+        backDescription: "<p>5</p>",
+      },
+      {
+        id: "mathPIExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.PI",
+        backDescription: "<p>3.141592653589793</p>",
+      },
+      {
+        id: "mathPowExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.pow(4, 3)",
+        backDescription: "<p>64</p>",
+      },
+      {
+        id: "mathRandomExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.random()",
+        backDescription: "<p>0.3470616447884125</p>",
+      },
+      {
+        id: "mathRoundExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.round(2.5)",
+        backDescription: "<p>3</p>",
+      },
+      {
+        id: "mathSignExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sign(42)",
+        backDescription: "<p>1</p>",
+      },
+      {
+        id: "mathSinExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sin(3.14)",
+        backDescription: "<p>0.0015926529164868282</p>",
+      },
+      {
+        id: "mathSinhExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sinh(3)",
+        backDescription: "<p>10.017874927409903</p>",
+      },
+      {
+        id: "mathSqrtExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.sqrt(9)",
+        backDescription: "<p>3</p>",
+      },
+      {
+        id: "mathSQRT1_2Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.SQRT1_2",
+        backDescription: "<p>0.7071067811865476</p>",
+      },
+      {
+        id: "mathSQRT2Example",
+        frontTitle: "Math Methods",
+        backTitle: "Math.SQRT2",
+        backDescription: "<p>1.4142135623730951</p>",
+      },
+      {
+        id: "mathTanExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.tan(2)",
+        backDescription: "<p>-2.185039863261519</p>",
+      },
+      {
+        id: "mathTanHExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.tanh(1)",
+        backDescription: "<p>0.7615941559557649</p>",
+      },
+      {
+        id: "mathTruncExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.trunc(8.76)",
+        backDescription: "<p>8</p>",
       },
     ],
   },
-  number: { 
-    methods: [ //22//
+  number: {
+    methods: [
+      //22//
       {
         id: "",
         frontTitle: "",
@@ -1023,7 +1536,8 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [ //22//
+    examples: [
+      //22//
       {
         id: "",
         frontTitle: "",
@@ -1033,7 +1547,8 @@ const pageData = {
     ],
   },
   object: {
-    methods: [ //22//
+    methods: [
+      //22//
       {
         id: "",
         frontTitle: "",
@@ -1041,7 +1556,8 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [ //22//
+    examples: [
+      //22//
       {
         id: "",
         frontTitle: "",
@@ -1050,8 +1566,9 @@ const pageData = {
       },
     ],
   },
-  set: { 
-    methods: [ //16//
+  set: {
+    methods: [
+      //16//
       {
         id: "",
         frontTitle: "",
@@ -1059,7 +1576,8 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [ //16//
+    examples: [
+      //16//
       {
         id: "",
         frontTitle: "",
@@ -1069,7 +1587,8 @@ const pageData = {
     ],
   },
   string: {
-    methods: [ //37//
+    methods: [
+      //37//
       {
         id: "",
         frontTitle: "",
@@ -1077,7 +1596,8 @@ const pageData = {
         backDescription: "",
       },
     ],
-    examples: [ //37//
+    examples: [
+      //37//
       {
         id: "",
         frontTitle: "",
