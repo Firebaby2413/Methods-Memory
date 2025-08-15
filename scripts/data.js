@@ -2140,16 +2140,16 @@ const pageData = {
   set: {
     methods: [
       {
-        id: "",
+        id: "setConstructorMethod",
         frontTitle: "Set Methods",
-        backTitle: "",
-        backDescription: "<p></p>",
+        backTitle: "new Set(iterable)",
+        backDescription: "<p>Constructor that creates a Set object.</p>",
       },
       {
-        id: "",
+        id: "setAddMethod",
         frontTitle: "Set Methods",
-        backTitle: "",
-        backDescription: "<p></p>",
+        backTitle: "add()",
+        backDescription: "<p>Inserts a new element into a set.</p>",
       },
       {
         id: "",
@@ -2238,16 +2238,16 @@ const pageData = {
     ],
     examples: [
       {
-        id: "",
+        id: "setConstructorExample",
         frontTitle: "Set Methods",
-        backTitle: "",
-        backDescription: "<p></p>",
+        backTitle: "const letters = new Set(['a', 'b', 'c']);",
+        backDescription: "<p>['a', 'b', 'c']</p>",
       },
       {
-        id: "",
+        id: "setAddExample",
         frontTitle: "Set Methods",
-        backTitle: "",
-        backDescription: "<p></p>",
+        backTitle: "letters.add('d')",
+        backDescription: "<p>['a', 'b', 'c', 'd']</p>",
       },
       {
         id: "",
