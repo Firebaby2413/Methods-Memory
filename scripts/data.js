@@ -20,6 +20,52 @@ const pageData = {
   array: {
     methods: [
       {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayFindMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.find()",
+        backDescription: "<p>Returns the value of the first element that passes a test.</p>",
+      },
+      {
+        id: "arrayFilterMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.filter()",
+        backDescription:
+          "<p>Creates a new array filled with elements that pass a test provided by a function.</p>",
+      },
+      {
+        id: "arrayFillMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.fill()",
+        backDescription:
+          "<p>Fills specified elements in an array with a value.</p>",
+      },
+      {
+        id: "arrayEveryMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.every()",
+        backDescription:
+          "<p>Checks if every element in an array passes a test, returning true if yes, false if any single one fails.</p>",
+      },
+      {
+        id: "arrayEntriesMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.entries()",
+        backDescription:
+          "<p>Returns an iterator with the key/value pairs of an array.</p>",
+      },
+      {
+        id: "",
+        frontTitle: "",
+        backTitle: "",
+        backDescription: "<p></p>",
+      },
+      {
         id: "arrayLengthMethod",
         frontTitle: "Array Methods",
         backTitle: "array.length",
@@ -124,6 +170,39 @@ const pageData = {
       },
     ],
     examples: [
+      {
+        id: "arrayFindExample",
+        frontTitle: "Array Methods",
+        backTitle: "const ages = [3, 10, 18, 20];",
+        backDescription: "<p>function checkAge(age) { return age > 18; }</p>",
+      },
+      {
+        id: "arrayFilterExample",
+        frontTitle: "Array Methods",
+        backTitle: "const ages = [32, 33, 16, 40];",
+        backDescription:
+          "<p>const result = ages.filter(checkAdult);</p><p>function checkAdult(age) { return age >= 18 }</p>",
+      },
+      {
+        id: "arrayFillExample",
+        frontTitle: "Array Methods",
+        backTitle: "fruits.fill('Kiwi')",
+        backDescription: "<p>['Kiwi', 'Kiwi', 'Kiwi', 'Kiwi']</p>",
+      },
+      {
+        id: "arrayEveryExample",
+        frontTitle: "Array Methods",
+        backTitle: "const ages = [32, 33, 16, 40]",
+        backDescription:
+          "<p>function checkAge(age){ return age > 18; }</p><p>false</p>",
+      },
+      {
+        id: "arrayEntriesExample",
+        frontTitle: "Array Methods",
+        backTitle: "const fruits = ['Banana', 'Orange', 'Apple', 'Mango']",
+        backDescription:
+          "<p>fruits.entries()</p><p>[0, 'Banana'], [1, 'Orange'], [2, 'Apple'], [3, 'Mango']</p>",
+      },
       {
         id: "arrayLengthExample",
         frontTitle: "Array Methods",
