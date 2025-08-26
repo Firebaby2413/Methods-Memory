@@ -258,7 +258,7 @@ h2 {
 
 .card {
   display: flex;
-  height: 130px;
+  height: 120px;
   width: 320px;
   position: relative;
   transform-style: preserve-3d;
