@@ -20,9 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return pageName === "index" ? "array" : pageName;
   }
 
-  function getSubset(cards) {
-
-  }
 
   function shuffleCards(methods, examples) {
     let cards = [...methods, ...examples];
@@ -100,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Create the board with shuffled cards
-        createBoard(currentData.methods.slice(15), currentData.examples.slice(15));
+        createBoard(currentData.methods, currentData.examples);
       }
     }
 
