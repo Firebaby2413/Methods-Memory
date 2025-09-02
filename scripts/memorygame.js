@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let matchedCards = 0;
   let time = 0;
   let timeInterval;
-  let totalPairs = 5;
+  let totalPairs = 15;
   let gameStarted = false;
   const preStartTimer = 8000;
 
