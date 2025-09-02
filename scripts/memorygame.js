@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let matchedCards = 0;
   let time = 0;
   let timeInterval;
-  let totalPairs = 0;
+  let totalPairs = 5;
   let gameStarted = false;
   const preStartTimer = 8000;
 
@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const path = window.location.pathname;
     const pageName = path.split("/").pop().replace(".html", "");
     return pageName === "index" ? "array" : pageName;
+  }
+  function getSubset(array, indexToStart) {
+    return array.slice(indexToStart, indexToStart + totalPairs);
   }
 
 
@@ -27,7 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function createBoard(methods, examples) {
-    const cards = shuffleCards(methods, examples);
+    const randomStartingPoint = Math.random() * methods.length; // number
+    const methodsToShuffle = getSubset(methods, randomStartingPoint);
+    const examplesToShuffle = getSubset(examples, randomStartingPoint);
+    const cards = shuffleCards(methodsToShuffle, examplesToShuffle);
     cards.forEach((elm) => createMemoryCard(elm, flipCard));
   }
 
@@ -97,7 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Create the board with shuffled cards
-        createBoard(currentData.methods, currentData.examples);
+
+        createBoard(currentData["methods"], currentData["examples"]);
       }
     }
 
@@ -152,9 +159,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (cardArea) {
         cardArea.innerHTML = "";
       }
-
-      // Set total pairs for win condition
-      totalPairs = currentData.methods.length;
 
       // Create the board with current page data
       createBoard(currentData.methods, currentData.examples);
