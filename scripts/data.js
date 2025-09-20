@@ -885,8 +885,7 @@ const pageData = {
         id: "dateConstructorPropertyExample",
         frontTitle: "Date Methods",
         backTitle: "",
-        backDescription:
-          "<p>Creates a new Date object.</p>",
+        backDescription: "<p>Creates a new Date object.</p>",
       },
       {
         id: "dateGetDateExample",
@@ -1280,7 +1279,7 @@ const pageData = {
         id: "mapClearExample",
         frontTitle: "Map Methods",
         backTitle: "",
-        backDescription: "<p>Removes all the elements from a map.</p>",
+        backDescription: "<p>Removes all the elements from a Map.</p>",
       },
       {
         id: "mapDeleteExample",
@@ -1351,12 +1350,12 @@ const pageData = {
   },
   math: {
     methods: [
-      {
-        id: "",
-        frontTitle: "",
-        backTitle: "",
-        backDescription: "<p></p>",
-      },
+      // {
+      //   id: "",
+      //   frontTitle: "",
+      //   backTitle: "",
+      //   backDescription: "<p></p>",
+      // },
       {
         id: "mathAbsMethod",
         frontTitle: "Math Methods",
@@ -1496,6 +1495,12 @@ const pageData = {
         backDescription: "<p></p>",
       },
       {
+        id: "mathLOG10EMethod",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LOG10E",
+        backDescription: "<p></p>",
+      },
+      {
         id: "mathLog1PMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.log1p()",
@@ -1511,12 +1516,6 @@ const pageData = {
         id: "mathLOG2EMethod",
         frontTitle: "Math Methods",
         backTitle: "Math.LOG2E",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "mathLOG10EMethod",
-        frontTitle: "Math Methods",
-        backTitle: "Math.LOG10E",
         backDescription: "<p></p>",
       },
       {
@@ -1762,6 +1761,12 @@ const pageData = {
           "<p>Returns the base-10 logarithm of a number (approximately 0.434).</p>",
       },
       {
+        id: "mathLOG10EExample",
+        frontTitle: "Math Methods",
+        backTitle: "Math.LOG10E",
+        backDescription: "<p>0.4342944819032518</p>",
+      },
+      {
         id: "mathLog1PExample",
         frontTitle: "Math Methods",
         backTitle: "",
@@ -1779,12 +1784,6 @@ const pageData = {
         backTitle: "Math.LOG2E",
         backDescription:
           "<p>Returns the base-2 logarithm of a E (approximately 1.442).",
-      },
-      {
-        id: "mathLOG10EExample",
-        frontTitle: "Math Methods",
-        backTitle: "Math.LOG10E",
-        backDescription: "<p>0.4342944819032518</p>",
       },
       {
         id: "mathMaxExample",
