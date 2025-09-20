@@ -2012,12 +2012,6 @@ const pageData = {
     ],
     examples: [
       {
-        id: "numberValueOfExample",
-        frontTitle: "Number Methods",
-        backTitle: "",
-        backDescription: "<p>Returns the primitive value of a number.</p>",
-      },
-      {
         id: "numberEpsilonExample",
         frontTitle: "Number Methods",
         backTitle: "",
@@ -2147,10 +2141,10 @@ const pageData = {
         backDescription: "<p>Converts a number to a string.</p>",
       },
       {
-        id: "numberToValueExample",
+        id: "numberValueOfExample",
         frontTitle: "Number Methods",
         backTitle: "",
-        backDescription: "<p</p>",
+        backDescription: "<p>Returns the primitive value of a number.</p>",
       },
     ],
   },
