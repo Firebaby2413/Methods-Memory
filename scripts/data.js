@@ -2660,12 +2660,6 @@ const pageData = {
   string: {
     methods: [
       {
-        id: "setNewExample",
-        frontTitle: "Set Methods",
-        backTitle: "",
-        backDescription: "<p>Creates a new Set.</p>",
-      },
-      {
         id: "stringAtMethod",
         frontTitle: "String Methods",
         backTitle: "String.at()",
@@ -2693,6 +2687,12 @@ const pageData = {
         id: "stringConcatMethod",
         frontTitle: "String Methods",
         backTitle: "String.concat()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "stringConstructorMethod",
+        frontTitle: "String Methods",
+        backTitle: "String.constructor",
         backDescription: "<p></p>",
       },
       {
@@ -2768,6 +2768,12 @@ const pageData = {
         backDescription: "<p></p>",
       },
       {
+        id: "stringPrototypeMethod",
+        frontTitle: "String Methods",
+        backTitle: "String.prototype",
+        backDescription: "<p></p>",
+      },
+      {
         id: "stringRepeatMethod",
         frontTitle: "String Methods",
         backTitle: "String.repeat()",
@@ -2794,7 +2800,7 @@ const pageData = {
       {
         id: "stringSliceMethod",
         frontTitle: "String Methods",
-        backTitle: "string.slice()",
+        backTitle: "String.slice()",
         backDescription: "<p></p>",
       },
       {
@@ -2911,6 +2917,12 @@ const pageData = {
         backDescription: "<p>Returns two or more joined strings.</p>",
       },
       {
+        id: "stringConstructorMethod",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p>Returns the string's constructor function.</p>",
+      },
+      {
         id: "stringEndsWithExample",
         frontTitle: "String Methods",
         backTitle: "",
@@ -2967,14 +2979,14 @@ const pageData = {
         frontTitle: "String Methods",
         backTitle: "",
         backDescription:
-          "<p>Searches a string for a value, or a regular expression, and returns the matches.</p>",
+          "<p>Searches a string for a value, or a regular expression, and returns the match.</p>",
       },
       {
         id: "stringMatchAllExample",
         frontTitle: "String Methods",
         backTitle: "",
         backDescription:
-          "<p>Searches a string for a value, or a regular expression, and returns the matches.</p>",
+          "<p>Searches a string for a value, or a regular expression, and returns all the matches.</p>",
       },
       {
         id: "stringPadEndExample",
@@ -2987,6 +2999,12 @@ const pageData = {
         frontTitle: "String Methods",
         backTitle: "",
         backDescription: "<p>Pads a string from the start.</p>",
+      },
+      {
+        id: "stringPrototypeExample",
+        frontTitle: "String Methods",
+        backTitle: "",
+        backDescription: "<p>Allows you to add properties and methods to an object.</p>",
       },
       {
         id: "stringRepeatExample",
