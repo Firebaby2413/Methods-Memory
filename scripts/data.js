@@ -2298,16 +2298,11 @@ const pageData = {
           "<p>Copies properties from a source object to a target object.</p>",
       },
       {
-        id: "objectDeleteExample",
-        frontTitle: "Object Methods",
-        backTitle: "",
-        backDescription: "<p>Deletes a property from an object.</p>",
-      },
-      {
         id: "objectConstructorExample",
-        frontTitle: "Object Methods",
+        frontTitle: "Object methods",
         backTitle: "",
-        backDescription: "<p></p>",
+        backDescription:
+          "<p>Returns the function that created an object's prototype.</p>",
       },
       {
         id: "objectCreateExample",
@@ -2327,6 +2322,12 @@ const pageData = {
         frontTitle: "Object Methods",
         backTitle: "",
         backDescription: "<p>Adds or changes a property.</p>",
+      },
+      {
+        id: "objectDeleteExample",
+        frontTitle: "Object Methods",
+        backTitle: "",
+        backDescription: "<p>Deletes a property from an object.</p>",
       },
       {
         id: "objectEntriesExample",
@@ -2371,7 +2372,7 @@ const pageData = {
         frontTitle: "Object Methods",
         backTitle: "",
         backDescription:
-          "<p>Groups object elements according to the returned callback value.</p>",
+          "<p>Groups object elements according to the returned callback values.</p>",
       },
       {
         id: "objectIsExtensibleExample",
@@ -2407,7 +2408,7 @@ const pageData = {
         id: "objectPrototypeExample",
         frontTitle: "Object Methods",
         backTitle: "",
-        backDescription: "<p></p>",
+        backDescription: "<p>Lets you add properties and methods to JavaScript objects.</p>",
       },
       {
         id: "objectSealExample",
@@ -2434,7 +2435,7 @@ const pageData = {
         frontTitle: "Object Methods",
         backTitle: "",
         backDescription:
-          "<p>REturns an array of the property values of an object.</p>",
+          "<p>Returns an array of the property values of an object.</p>",
       },
     ],
   },
