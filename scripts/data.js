@@ -4,7 +4,7 @@ const pageData = {
       {
         id: "instructionMethod",
         frontTitle: "Methods Group",
-        backTitle: "Method name",
+        backTitle: "Method syntax",
         backDescription: "",
       },
     ],
@@ -20,117 +20,15 @@ const pageData = {
   array: {
     methods: [
       {
-        id: "arrayValuesMethod",
+        id: "arrayArrayMethod",
         frontTitle: "Array Methods",
-        backTitle: "array.values()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayFindLastIndexMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.findLastIndex()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayFindLastMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.findLast()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayFindIndexMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.findIndex()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayFindMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.find()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayFilterMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.filter()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayFillMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.fill()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayEveryMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.every()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayEntriesMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.entries()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayFlatMapMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.flatMap()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayLengthMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.length",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayToStringMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.toString()",
+        backTitle: "new array()",
         backDescription: "<p></p>",
       },
       {
         id: "arrayAtMethod",
         frontTitle: "Array Methods",
         backTitle: "array.at()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayJoinMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.join()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayPopMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.pop()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayPushMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.push()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayShiftMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.shift()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayUnshiftMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.unshift()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayDeleteMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.delete()",
         backDescription: "<p></p>",
       },
       {
@@ -146,27 +44,69 @@ const pageData = {
         backDescription: "<p></p>",
       },
       {
+        id: "arrayDeleteMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.delete()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayEntriesMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.entries()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayEveryMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.every()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayFillMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.fill()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayFilterMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.filter()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayFindMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.find()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayFindIndexMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.findIndex()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayFindLastMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.findLast()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayFindLastIndexMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.findLastIndex()",
+        backDescription: "<p></p>",
+      },
+      {
         id: "arrayFlatMethod",
         frontTitle: "Array Methods",
         backTitle: "array.flat()",
         backDescription: "<p></p>",
       },
       {
-        id: "arraySliceMethod",
+        id: "arrayFlatMapMethod",
         frontTitle: "Array Methods",
-        backTitle: "array.slice()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arraySpliceMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.splice()",
-        backDescription: "<p></p>",
-      },
-      {
-        id: "arrayToSplicedMethod",
-        frontTitle: "Array Methods",
-        backTitle: "array.toSpliced()",
+        backTitle: "array.flatMap()",
         backDescription: "<p></p>",
       },
       {
@@ -200,6 +140,12 @@ const pageData = {
         backDescription: "<p></p>",
       },
       {
+        id: "arrayJoinMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.join()",
+        backDescription: "<p></p>",
+      },
+      {
         id: "arrayKeysMethod",
         frontTitle: "Array Methods",
         backTitle: "array.keys()",
@@ -212,6 +158,12 @@ const pageData = {
         backDescription: "<p></p>",
       },
       {
+        id: "arrayLengthMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.length",
+        backDescription: "<p></p>",
+      },
+      {
         id: "arrayMapMethod",
         frontTitle: "Array Methods",
         backTitle: "array.map()",
@@ -221,6 +173,18 @@ const pageData = {
         id: "arrayOfMethod",
         frontTitle: "Array Methods",
         backTitle: "array.of()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayPopMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.pop()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayPushMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.push()",
         backDescription: "<p></p>",
       },
       {
@@ -242,6 +206,18 @@ const pageData = {
         backDescription: "<p></p>",
       },
       {
+        id: "arrayShiftMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.shift()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arraySliceMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.slice()",
+        backDescription: "<p></p>",
+      },
+      {
         id: "arraySomeMethod",
         frontTitle: "Array Methods",
         backTitle: "array.some()",
@@ -251,6 +227,12 @@ const pageData = {
         id: "arraySortMethod",
         frontTitle: "Array Methods",
         backTitle: "array.sort()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arraySpliceMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.splice()",
         backDescription: "<p></p>",
       },
       {
@@ -266,9 +248,33 @@ const pageData = {
         backDescription: "<p></p>",
       },
       {
+        id: "arrayToSplicedMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.toSpliced()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayToStringMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.toString()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayUnshiftMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.unshift()",
+        backDescription: "<p></p>",
+      },
+      {
         id: "arrayValueOfMethod",
         frontTitle: "Array Methods",
         backTitle: "array.valueOf()",
+        backDescription: "<p></p>",
+      },
+      {
+        id: "arrayValuesMethod",
+        frontTitle: "Array Methods",
+        backTitle: "array.values()",
         backDescription: "<p></p>",
       },
       {
@@ -280,247 +286,16 @@ const pageData = {
     ],
     examples: [
       {
-        id: "arrayWithExample",
+        id: "arrayArrayExample",
         frontTitle: "Array Methods",
         backTitle: "",
-        backDescription: "<p>Returns a new array with updated elements.</p>",
-      },
-      {
-        id: "arrayValueOfExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription: "<p>Returns the primitive value of an array.</p>",
-      },
-      {
-        id: "arrayValuesExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Returns a new array iterator object that iterates the value of each item in an array.</p>",
-      },
-      {
-        id: "arrayIsArrayExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription: "<p>Checks whether an object is an array.</p>",
-      },
-      {
-        id: "arrayToSortedExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Sorts the elements of an array (to a new array).</p>",
-      },
-      {
-        id: "arraySortExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription: "<p>Sorts the elements of an array.</p>",
-      },
-      {
-        id: "arraySomeExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Checks if any of the elements in an array pass a test.</p>",
-      },
-      {
-        id: "arrayReverseExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Reverses the order of the elements in an array.</p>",
-      },
-      {
-        id: "arrayReduceRightExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Reduce the values of an array to a single value (going right-to-left).</p>",
-      },
-      {
-        id: "arrayReduceExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Reduces the values of an array to a single value (going left-to-right).</p>",
-      },
-      {
-        id: "arrayOfExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription: "<p>Creates an array from a number of arguments.</p>",
-      },
-      {
-        id: "arrayMapExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Creates a new array with the result of calling a function for each array element.</p>",
-      },
-      {
-        id: "arrayLastIndexOfExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Search the array for an element, starting at the end, and returns its position.</p>",
-      },
-      {
-        id: "arrayKeysExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Returns an Array Iteration Object, containing the keys of the original array.</p>",
-      },
-      {
-        id: "arrayIndexOfExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Search the array for an element and returns its position.</p>",
-      },
-      {
-        id: "arrayIncludesExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Check if an array contains the specified element.</p>",
-      },
-      {
-        id: "arrayFromExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription: "<p>Creates an array from an object.</p>",
-      },
-      {
-        id: "arrayForEachExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription: "<p>Calls a function for each array element.</p>",
-      },
-      {
-        id: "arrayFlatMapExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Maps all array elements and creates a new flat array.</p>",
-      },
-      {
-        id: "arrayFindIndexExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Returns the index of the first element in an array that passes a test.</p>",
-      },
-      {
-        id: "arrayFindLastIndexExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Returns the index of the last element in an array that passes a test.</p>",
-      },
-      {
-        id: "arrayFindLastExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Returns the value of the last element in an array.</p>",
-      },
-      {
-        id: "arrayFindExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Returns the value of the first element in an array that passes a test.</p>",
-      },
-      {
-        id: "arrayFilterExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Creates a new array filled with elements that pass a test provided by a function.</p>",
-      },
-      {
-        id: "arrayFillExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Fill the elements in an array with a static value.</p>",
-      },
-      {
-        id: "arrayEveryExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Checks if every element in an array passes a test.</p>",
-      },
-      {
-        id: "arrayEntriesExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Returns a key/value pair Array Iteration Object.</p>",
-      },
-      {
-        id: "arrayLengthExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Sets or returns the number of elements in an array.</p>",
-      },
-      {
-        id: "arrayToStringExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Converts an array to a string, and returns the results.</p>",
+        backDescription: "<p>Creates a new array</p>",
       },
       {
         id: "arrayAtExample",
         frontTitle: "Array Methods",
         backTitle: "",
         backDescription: "<p>Returns an indexed element of an array.</p>",
-      },
-      {
-        id: "arrayJoinExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription: "<p>Joins all elements of an array into a string.</p>",
-      },
-      {
-        id: "arrayPopExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Removes the last element of an array, and returns that element.</p>",
-      },
-      {
-        id: "arrayPushExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Adds new elements to the end of an array, and returns the new length.</p>",
-      },
-      {
-        id: "arrayShiftExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Removes the first element of an array, and returns that element.</p>",
-      },
-      {
-        id: "arrayUnshiftExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Adds new elements to the beginning of an array, and returns the new length.</p>",
-      },
-      {
-        id: "arrayDeleteExample",
-        frontTitle: "Array Methods",
-        backTitle: "",
-        backDescription:
-          "<p>Deletes elements leaving undefined holes in an array.</p>",
       },
       {
         id: "arrayConcatExample",
@@ -537,10 +312,194 @@ const pageData = {
           "<p>Copies array elements within an array, to and from specified positions.</p>",
       },
       {
+        id: "arrayDeleteExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Deletes elements leaving undefined holes in an array.</p>",
+      },
+      {
+        id: "arrayEntriesExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Returns a key/value pair Array Iteration Object.</p>",
+      },
+      {
+        id: "arrayEveryExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Checks if every element in an array passes a test.</p>",
+      },
+      {
+        id: "arrayFillExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Fill the elements in an array with a static value.</p>",
+      },
+      {
+        id: "arrayFilterExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Creates a new array filled with every element in an array that pass a test.</p>",
+      },
+      {
+        id: "arrayFindExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Returns the value of the first element in an array that pass a test.</p>",
+      },
+      {
+        id: "arrayFindIndexExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Returns the index of the first element in an array that passes a test.</p>",
+      },
+      {
+        id: "arrayFindLastExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Returns the value of the last element in an array that pass a test.</p>",
+      },
+      {
+        id: "arrayFindLastIndexExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Returns the index of the last element in an array that pass a test.</p>",
+      },
+      {
         id: "arrayFlatExample",
         frontTitle: "Array Methods",
         backTitle: "",
         backDescription: "<p>Concatenates sub-array elements.</p>",
+      },
+      {
+        id: "arrayFlatMapExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Maps all array elements and creates a new flat array.</p>",
+      },
+      {
+        id: "arrayForEachExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Calls a function for each array element.</p>",
+      },
+      {
+        id: "arrayFromExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Creates an array from an object.</p>",
+      },
+      {
+        id: "arrayIncludesExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Check if an array contains the specified element.</p>",
+      },
+      {
+        id: "arrayIndexOfExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Search the array for an element and returns its position.</p>",
+      },
+      {
+        id: "arrayIsArrayExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Checks whether an object is an array.</p>",
+      },
+      {
+        id: "arrayJoinExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Joins all elements of an array into a string.</p>",
+      },
+      {
+        id: "arrayKeysExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Returns an Array Iteration Object, containing the keys of the original array.</p>",
+      },
+      {
+        id: "arrayLastIndexOfExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Search the array for an element, starting at the end, and returns its position.</p>",
+      },
+      {
+        id: "arrayLengthExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Property that sets or returns the number of elements in an array.</p>",
+      },
+      {
+        id: "arrayMapExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Creates a new array with the result of calling a function for each array element.</p>",
+      },
+      {
+        id: "arrayOfExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Creates an array from a number of arguments.</p>",
+      },
+      {
+        id: "arrayPopExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Removes the last element of an array, and returns that element.</p>",
+      },
+      {
+        id: "arrayPushExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Adds new elements to the end of an array, and returns the new length.</p>",
+      },
+      {
+        id: "arrayReduceExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Reduces the values of an array to a single value (going left-to-right).</p>",
+      },
+      {
+        id: "arrayReduceRightExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Reduce the values of an array to a single value (going right-to-left).</p>",
+      },
+      {
+        id: "arrayReverseExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Reverses the order of the elements in an array.</p>",
+      },
+      {
+        id: "arrayShiftExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Removes the first element of an array, and returns that element.</p>",
       },
       {
         id: "arraySliceExample",
@@ -550,10 +509,37 @@ const pageData = {
           "<p>Selects a part of an array, and returns the new array.</p>",
       },
       {
+        id: "arraySomeExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Checks if any of the elements in an array pass a test.</p>",
+      },
+      {
+        id: "arraySortExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Sorts the elements of an array.</p>",
+      },
+      {
         id: "arraySpliceExample",
         frontTitle: "Array Methods",
         backTitle: "",
         backDescription: "<p>Adds or Removes array elements.</p>",
+      },
+      {
+        id: "arrayToReversedExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Reverses the order of array elements (to a new array).</p>",
+      },
+      {
+        id: "arrayToSortedExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Sorts the elements of an array (to a new array).</p>",
       },
       {
         id: "arrayToSplicedExample",
@@ -563,11 +549,37 @@ const pageData = {
           "<p>Adds or Removes array elements (to a new array).</p>",
       },
       {
-        id: "arrayToReversedExample",
+        id: "arrayToStringExample",
         frontTitle: "Array Methods",
         backTitle: "",
         backDescription:
-          "<p>Reverses the order of array elements (to a new array).</p>",
+          "<p>Converts an array to a string, and returns the results.</p>",
+      },
+      {
+        id: "arrayUnshiftExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Adds new elements to the beginning of an array, and returns the new length.</p>",
+      },
+      {
+        id: "arrayValueOfExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Returns the primitive value of an array.</p>",
+      },
+      {
+        id: "arrayValuesExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription:
+          "<p>Returns a new array iterator object that iterates the value of each item in an array.</p>",
+      },
+      {
+        id: "arrayWithExample",
+        frontTitle: "Array Methods",
+        backTitle: "",
+        backDescription: "<p>Returns a new array with updated elements.</p>",
       },
     ],
   },
@@ -583,8 +595,7 @@ const pageData = {
         id: "dateConstructorPropertyMethod",
         frontTitle: "Date Methods",
         backTitle: "Date.constructor",
-        backDescription:
-          "<p>Returns the function that created the Date Prototype</p>",
+        backDescription: "<p></p>",
       },
       {
         id: "getDateMethod",
@@ -830,8 +841,7 @@ const pageData = {
         id: "toLocaleStringMethod",
         frontTitle: "Date Methods",
         backTitle: "toLocaleString()",
-        backDescription:
-          "<p>Returns a date as a string, using locale settings.</p>",
+        backDescription: "<p></p>",
       },
       {
         id: "toStringMethod",
@@ -2635,7 +2645,8 @@ const pageData = {
         id: "setSizeExample",
         frontTitle: "Set Methods",
         backTitle: "",
-        backDescription: "<p>Property that returns the number of elements in a Set.</p>",
+        backDescription:
+          "<p>Property that returns the number of elements in a Set.</p>",
       },
     ],
   },
@@ -2863,19 +2874,22 @@ const pageData = {
         id: "stringCharAtExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns the character at a specified index (position).</p>",
+        backDescription:
+          "<p>Returns the character at a specified index (position).</p>",
       },
       {
         id: "stringCharCodeAtExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns the Unicode of the character at a specified index.</p>",
+        backDescription:
+          "<p>Returns the Unicode of the character at a specified index.</p>",
       },
       {
         id: "stringCodePointAtExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns the Unicode value at an index (position) in a string.</p>",
+        backDescription:
+          "<p>Returns the Unicode value at an index (position) in a string.</p>",
       },
       {
         id: "stringConcatExample",
@@ -2887,7 +2901,8 @@ const pageData = {
         id: "stringEndsWithExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns if a string ends with a specified value.</p>",
+        backDescription:
+          "<p>Returns if a string ends with a specified value.</p>",
       },
       {
         id: "stringFromCharCodeExample",
@@ -2899,13 +2914,15 @@ const pageData = {
         id: "stringIncludesExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns if a string contains a specified value.</p>",
+        backDescription:
+          "<p>Returns if a string contains a specified value.</p>",
       },
       {
         id: "stringIndexOfExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns the index (position) of the first occurrence of a value in a string.</p>",
+        backDescription:
+          "<p>Returns the index (position) of the first occurrence of a value in a string.</p>",
       },
       {
         id: "stringIsWellFormedExample",
@@ -2917,7 +2934,8 @@ const pageData = {
         id: "stringLastIndexOfExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns the index (position) of the last occurrence of a value in a string.</p>",
+        backDescription:
+          "<p>Returns the index (position) of the last occurrence of a value in a string.</p>",
       },
       {
         id: "stringLengthExample",
@@ -2935,13 +2953,15 @@ const pageData = {
         id: "stringMatchExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Searches a string for a value, or a regular expression, and returns the matches.</p>",
+        backDescription:
+          "<p>Searches a string for a value, or a regular expression, and returns the matches.</p>",
       },
       {
         id: "stringMatchAllExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Searches a string for a value, or a regular expression, and returns the matches.</p>",
+        backDescription:
+          "<p>Searches a string for a value, or a regular expression, and returns the matches.</p>",
       },
       {
         id: "stringPadEndExample",
@@ -2959,31 +2979,36 @@ const pageData = {
         id: "stringRepeatExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a new string with a number of copies of a string.</p>",
+        backDescription:
+          "<p>Returns a new string with a number of copies of a string.</p>",
       },
       {
         id: "stringReplaceExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Searches a string for a pattern and returns a string where the first match is replaced.</p>",
+        backDescription:
+          "<p>Searches a string for a pattern and returns a string where the first match is replaced.</p>",
       },
       {
         id: "stringReplaceAllExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Searches a string for a pattern and returns a string where all matches are replaced.</p>",
+        backDescription:
+          "<p>Searches a string for a pattern and returns a string where all matches are replaced.</p>",
       },
       {
         id: "stringSearchExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Searches a string for a value, or regular expression, and returns the index (position) of the match.</p>",
+        backDescription:
+          "<p>Searches a string for a value, or regular expression, and returns the index (position) of the match.</p>",
       },
       {
         id: "stringSliceExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Extracts a part of a string and returns a new string.</p>",
+        backDescription:
+          "<p>Extracts a part of a string and returns a new string.</p>",
       },
       {
         id: "stringSplitExample",
@@ -2995,49 +3020,57 @@ const pageData = {
         id: "stringStartsWithExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Checks whether a string begins with specified characters.</p>",
+        backDescription:
+          "<p>Checks whether a string begins with specified characters.</p>",
       },
       {
         id: "stringSubstringExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Extracts characters from a string, between two specified indices (positions).</p>",
+        backDescription:
+          "<p>Extracts characters from a string, between two specified indices (positions).</p>",
       },
       {
         id: "stringToLocaleLowerCaseExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string converted to lowercase letters, using the host's locale.</p>",
+        backDescription:
+          "<p>Returns a string converted to lowercase letters, using the host's locale.</p>",
       },
       {
         id: "stringToLocaleUpperCaseExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string converted to uppercase letters, using the host's locale.</p>",
+        backDescription:
+          "<p>Returns a string converted to uppercase letters, using the host's locale.</p>",
       },
       {
         id: "stringToLowerCaseExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string converted to lowercase letters.</p>",
+        backDescription:
+          "<p>Returns a string converted to lowercase letters.</p>",
       },
       {
         id: "stringToStringExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string or a string object as a string.</p>",
+        backDescription:
+          "<p>Returns a string or a string object as a string.</p>",
       },
       {
         id: "stringToUpperCaseExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string converted to uppercase letters.</p>",
+        backDescription:
+          "<p>Returns a string converted to uppercase letters.</p>",
       },
       {
         id: "stringToWellFormedExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string where `lone surrogates` are replaced with the Unicode replacement character.</p>",
+        backDescription:
+          "<p>Returns a string where `lone surrogates` are replaced with the Unicode replacement character.</p>",
       },
       {
         id: "stringTrimExample",
@@ -3049,19 +3082,22 @@ const pageData = {
         id: "stringTrimEndExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string with removed whitespaces from the end.</p>",
+        backDescription:
+          "<p>Returns a string with removed whitespaces from the end.</p>",
       },
       {
         id: "stringTrimStartExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns a string with removed whitespaces from the start.</p>",
+        backDescription:
+          "<p>Returns a string with removed whitespaces from the start.</p>",
       },
       {
         id: "stringValueOfExample",
         frontTitle: "String Methods",
         backTitle: "",
-        backDescription: "<p>Returns the primitive value of a string or a string object.</p>",
+        backDescription:
+          "<p>Returns the primitive value of a string or a string object.</p>",
       },
     ],
   },
