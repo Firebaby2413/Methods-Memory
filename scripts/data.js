@@ -2408,7 +2408,8 @@ const pageData = {
         id: "objectPrototypeExample",
         frontTitle: "Object Methods",
         backTitle: "",
-        backDescription: "<p>Lets you add properties and methods to JavaScript objects.</p>",
+        backDescription:
+          "<p>Lets you add properties and methods to JavaScript objects.</p>",
       },
       {
         id: "objectSealExample",
@@ -2441,6 +2442,12 @@ const pageData = {
   },
   set: {
     methods: [
+      {
+        id: "setNewMethod",
+        frontTitle: "Set Methods",
+        backTitle: "new Set()",
+        backDescription: "<p></p>",
+      },
       {
         id: "setAddMethod",
         frontTitle: "Set Methods",
@@ -2539,6 +2546,12 @@ const pageData = {
       },
     ],
     examples: [
+      {
+        id: "setNewExample",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p>Creates a new set.</p>",
+      },
       {
         id: "setAddExample",
         frontTitle: "Set Methods",
@@ -2646,6 +2659,12 @@ const pageData = {
   },
   string: {
     methods: [
+      {
+        id: "setNewExample",
+        frontTitle: "Set Methods",
+        backTitle: "",
+        backDescription: "<p>Creates a new Set.</p>",
+      },
       {
         id: "stringAtMethod",
         frontTitle: "String Methods",
