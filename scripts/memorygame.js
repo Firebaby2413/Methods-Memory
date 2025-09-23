@@ -32,8 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function createBoard(methods, examples) {
     const randomStartingPoint = Math.random() * methods.length; // number
     const methodsToShuffle = getSubset(methods, randomStartingPoint);
+    totalPairs = methodsToShuffle.length;
     const examplesToShuffle = getSubset(examples, randomStartingPoint);
     const cards = shuffleCards(methodsToShuffle, examplesToShuffle);
+
     cards.forEach((elm) => createMemoryCard(elm, flipCard));
   }
 
